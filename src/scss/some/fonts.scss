@@ -1,0 +1,191 @@
+@import "media.scss";
+@import "constants.scss";
+// Подключение семейства шрифтов 'Montserrat'
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Light.woff2') format('woff2'),
+        url('/fonts/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('/fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('/fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('/fonts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Подключение семейства шрифтов 'Raleway'
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway-Regular.woff2') format('woff2'),
+        url('/fonts/Raleway-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway-Medium.woff2') format('woff2'),
+        url('/fonts/Raleway-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('/fonts/Raleway-SemiBold.woff2') format('woff2'),
+        url('/fonts/Raleway-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+%titles {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color:$title-white;
+}
+
+%texts {
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  color: $text-white;
+}
+
+.h1 {
+	@extend %titles;
+	font-size: 64;
+	line-height: 1.1;
+	@include media-tb {
+		font-size: 54px;
+	}
+	@include media-mb {
+		font-size: 34px;
+	}
+}
+
+.h2 {
+	@extend %titles;
+	font-size: 62;
+	line-height: 1.2;
+	@include media-tb {
+		font-size: 42px;
+	}
+	@include media-mb {
+		font-size: 28px;
+	}
+}
+
+.h3 {
+	@extend %titles;
+	font-size: 34;
+	line-height: 1.3;
+  font-weight: 400;
+	@include media-tb {
+		font-size: 24px;
+	}
+	@include media-mb {
+		font-size: 20px;
+	}
+}
+
+.lead-title {
+  @extend %titles;
+	font-size: 40;
+	line-height: 1.3;
+  font-weight: 400;
+	@include media-tb {
+		font-size: 30px;
+	}
+	@include media-mb {
+		font-size: 24px;
+	}
+}
+
+.number {
+  @extend %titles;
+  color: $red;
+	font-size: 80;
+	line-height: 1.1;
+	@include media-tb {
+		font-size: 60px;
+	}
+	@include media-mb {
+		font-size: 60px;
+	}
+}
+
+.lead-text {
+  @extend %texts;
+	font-size: 20;
+	line-height: 1.6;
+	@include media-tb {
+		font-size: 20px;
+	}
+	@include media-mb {
+		font-size: 18px;
+	}
+}
+
+.text {
+  @extend %texts;
+	font-size: 16;
+	line-height: 1.6;
+	@include media-tb {
+		font-size: 16px;
+	}
+	@include media-mb {
+		font-size: 16px;
+	}
+}
+
+.text-s {
+  @extend %texts;
+	font-size: 14;
+	line-height: 1.6;
+	@include media-tb {
+		font-size: 14px;
+	}
+	@include media-mb {
+		font-size: 14px;
+	}
+}
+
+.fact {
+  @extend %texts;
+  font-size: 14;
+	line-height: 1.55;
+  text-transform: uppercase;
+	@include media-tb {
+		font-size: 14px;
+	}
+	@include media-mb {
+		font-size: 12px;
+	}
+}

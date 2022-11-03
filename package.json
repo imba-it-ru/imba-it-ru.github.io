@@ -1,0 +1,30 @@
+{
+	"name": "gulp-webpack-template",
+	"version": "0.0.1",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "wp-scripts build",
+		"start": "gulp"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.4.7",
+		"browser-sync": "^2.27.10",
+		"gsap": "^3.11.3",
+		"gulp": "^4.0.2",
+		"gulp-cli": "^2.3.0",
+		"gulp-pug": "^5.0.0",
+		"gulp-sass": "^5.1.0",
+		"node-sass": "^7.0.1",
+		"pug": "^3.0.2",
+		"sass": "^1.51.0",
+		"sass-loader": "^12.6.0",
+		"webpack": "^5.72.0",
+		"webpack-cli": "^4.9.2",
+		"webpack-stream": "^7.0.0",
+		"wowjs": "^1.1.3"
+	}
+}

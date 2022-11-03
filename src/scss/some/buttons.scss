@@ -1,0 +1,82 @@
+/*
+  Примеры использования ====================================
+
+  Красная кнопка
+  <button type="button" class="button button_style_red">Оставить заказ →</button>
+
+  Кнопка с обводкой
+  <button type="button" class="button button_style_outlined">Оставить заказ →</button>
+
+  Кнопка в виде ссылки
+  <button type="button" class="button button_style_link">Оставить заказ →</button>
+
+*/
+
+.button {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	padding: 24px 40px;
+	@extend %titles;
+	font-size: 15px;
+	line-height: 1.2;
+	border: none;
+	cursor: pointer;
+
+	// &_portfolio {
+	// 	background-color: transparent;
+	// 	color: $grey-8e;
+	// 	border: 1px solid;
+	// 	border-color: $gold-h;
+	// 	transition: all 0.3s ease;
+	// 	&:hover {
+	// 		background-color: $gold-h;
+	// 		color: $black-1c;
+	// 	}
+
+	// 	&_active {
+	// 		background-color: $gold-h;
+	// 		color: $black-1c;
+	// 	}
+	// }
+
+	&_style {
+		&_red {
+			background-color: $red;
+			color: $black-20;
+			transition: background-color, 0.3s ease;
+			&:hover {
+				background-color: transparent;
+        color:$red;
+        border: 3px solid $red;
+			}
+		}
+
+		&_outlined {
+			background-color: transparent;
+			border: 1px solid $red;
+      box-sizing: border-box;
+			color: $title-white;
+			transition: border-color, 0.3s ease;
+      border-radius: 50px;
+			&:hover {
+				border: 3px solid $red;
+        filter: drop-shadow(0px 8px 16px rgba(240, 85, 85, 0.35));
+			}
+		}
+		&_link {
+			background-color: transparent;
+			justify-content: flex-start;
+			align-items: flex-start;
+			text-align: left;
+			padding-left: 0;
+			color: $red;
+			transition: color, 0.3s ease;
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+}

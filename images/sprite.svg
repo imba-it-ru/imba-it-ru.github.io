@@ -1,0 +1,17 @@
+<svg display="none" xmlns="http://www.w3.org/2000/svg">
+
+    <symbol id="burger" viewBox="0 0 66 26" fill="none">
+        <path d="M1 1H65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1 25H65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1 13H65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="exit" viewBox="0 0 16 16" fill="none">
+        <path d="M1 1L7.99999 7.99999M7.99999 7.99999L15 15M7.99999 7.99999L15 1M7.99999 7.99999L1 15" stroke="#F05555" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol viewBox="0 0 16 16" fill="none">
+        
+    </symbol>
+
+</svg>

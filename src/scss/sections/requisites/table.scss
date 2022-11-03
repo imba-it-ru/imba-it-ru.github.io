@@ -1,0 +1,26 @@
+.table-section {
+  &__container {
+    padding: 0 0 130px 440px;
+    padding-top: 0;
+  }
+}
+
+.table-requisites {
+  border-spacing: 32px 24px;
+  margin-bottom: 32px;
+  &__title {
+    padding-bottom: 40px;
+  }
+
+  &__col-name {
+    width: 298px;
+    padding-right: 32px;
+    vertical-align: top;
+  }
+
+  &__col-description {
+    width: 400px;
+    color: $text-white;
+    vertical-align: top;
+  }
+}

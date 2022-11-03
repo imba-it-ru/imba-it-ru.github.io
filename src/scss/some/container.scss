@@ -1,0 +1,22 @@
+.container {
+	margin: 0 auto;
+	padding: 130px 6px;
+	max-width: 1288px;
+  // margin-left: calc((100vw - 1200px) / 2);
+
+	@include media-tb {
+		max-width: 960px;
+		padding: 100px 16px;
+		margin: 0 auto;
+	}
+	@include media-ts {
+		max-width: 640px;
+	}
+	@include media-mb {
+		max-width: 480px;
+		padding: 70px 12px;
+	}
+	@include media-ms {
+		max-width: 320px;
+	}
+}

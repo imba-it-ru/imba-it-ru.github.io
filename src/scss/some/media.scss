@@ -1,0 +1,34 @@
+$pc: 1600px;
+$tablet-big: 1200px;
+$tablet-small: 960px;
+$mobile-big: 640px;
+$mobile-small: 480px;
+
+@mixin media-pc {
+  @media screen and (max-width: $pc) {
+    @content;
+  }
+}
+
+@mixin media-tb {
+  @media screen and (max-width: $tablet-big) {
+    @content;
+  }
+}
+
+@mixin media-ts {
+  @media screen and (max-width: $tablet-small) {
+    @content;
+  }
+}
+
+@mixin media-mb {
+  @media screen and (max-width: $mobile-big) {
+    @content;
+  }
+}
+@mixin media-ms {
+  @media screen and (max-width: $mobile-small) {
+    @content;
+  }
+}

@@ -1,0 +1,17 @@
+$red: #F05555;
+$title-white: #ECECEC;
+$text-white: #ADADAD;
+$gr: #fff;
+
+$black-20: #202020;
+
+@mixin mo() {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.red-line {
+  margin-top: 48px;
+  width: 80px;
+  height: 2px;
+  background-color: $red;
+}
