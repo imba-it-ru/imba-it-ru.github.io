@@ -1,6 +1,7 @@
 .big-logo {
-  &__container {
 
+  &__container {
+    padding-bottom: 80px;
   }
   &__line {
     width: 100%;
@@ -12,38 +13,59 @@
   &__content-logo {
     display:grid;
     grid-template-columns: repeat(4, 1fr);
+    @include media-mb {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
-  &__logo {
+  &__btn {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    &-img {
-      img {
-        filter: grayscale(100%);
-        transition: filter, 0.3s ease;
-        &:hover {
-          filter: none;
-          transition: filter, 0.3s ease;
-        }
-      }
-      // width: 100%;
-      
-    }
-    &-text {
-      margin-top: -26px; 
+  }
 
-      &::before {
-        content: "";
-        display: inline-block;
-        background-color: $red;
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        margin-right: 8px;
-        vertical-align: 20%;
+  &__img {
+    &-box {
+    position: relative;
+    width: 100%;
+  }
+    &-white {
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        opacity: 0;
       }
     }
+    &-color {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        opacity: 100%;
+      }
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    margin-top: -26px;
+  }
+
+  &__marker {
+    width: 4px;
+    height: 4px;
+    background-color: $red;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  &__logo-text {
+    text-align: left;
   }
 }
