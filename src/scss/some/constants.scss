@@ -14,4 +14,10 @@ $black-20: #202020;
   width: 80px;
   height: 2px;
   background-color: $red;
+  @include media-ts {
+    margin-top: 32px;
+  }
+  @include media-mb {
+    margin-top: 24px;
+  }
 }

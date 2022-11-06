@@ -3,6 +3,9 @@
     display: grid;
     grid-template-columns: 408px 1fr;
     column-gap: 32px;
+    @include media-ts {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__lines {
@@ -16,12 +19,23 @@
     row-gap: 80px;
     &-one {
       grid-column: 1 / 3;
+      @include media-ms {
+        grid-column: 1;
+      }
+    }
+    @include media-ts {
+      margin-top: 64px;
+    }
+    @include media-mb {
+      margin-top: 40px;
+      grid-template-columns: 1fr;
     }
   }
 
-  &__logo-one {
+  &__logo {
     display: flex;
     column-gap: 16px;
     margin-top: 32px;
+    align-items: center;
   }
 }

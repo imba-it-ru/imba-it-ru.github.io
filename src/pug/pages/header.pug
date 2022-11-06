@@ -6,15 +6,15 @@ header.header
         <img src="images/logo-for-light-mode.svg" alt="Лого">
       nav.header-menu
         ul.header-menu__list
-          //- each value, index in {'О компании' : 'about', 'Партнеры' : 'partners', 'Контакты' : 'contact'}
-          //-   li.header-menu__item
-          //-     a(href= "/" + value + ".html")= index
-          li.header-menu__item
-            a(href="#").header-menu__link О&nbsp;компании
-          li.header-menu__item
-            a(href="#").header-menu__link Партнеры
-          li.header-menu__item
-            a(href="#").header-menu__link Контакты
+          each value, index in {'О компании' : 'about', 'Партнеры' : 'partners', 'Контакты' : 'contact'}
+            li.header-menu__item
+              a.header-menu__link(href= "/" + value + ".html")= index
+          //- li.header-menu__item
+          //-   a(href="#").header-menu__link О&nbsp;компании
+          //- li.header-menu__item
+          //-   a(href="#").header-menu__link Партнеры
+          //- li.header-menu__item
+          //-   a(href="#").header-menu__link Контакты
       .header__control
         button.header__btn.js_header_btn
          <svg width="66" height="26">

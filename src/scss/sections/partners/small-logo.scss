@@ -1,0 +1,71 @@
+.small-logo {
+
+  &__container {
+    padding: 80px 6px;
+  }
+
+  &__content-logo {
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 40px 32px;
+    @include media-tb {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @include media-mb {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 16px;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  &__img {
+    &-box {
+    position: relative;
+    width: 100%;
+    @include media-mb {
+      width: 120px;
+    }
+  }
+    &-white {
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        opacity: 0;
+      }
+    }
+    &-color {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        opacity: 100%;
+      }
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    column-gap: 8px;
+    align-items: baseline;
+  }
+
+  &__marker {
+    width: 4px;
+    height: 4px;
+    background-color: $red;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  &__logo-text {
+    text-align: left;
+  }
+}
