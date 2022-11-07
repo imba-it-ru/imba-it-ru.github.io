@@ -1,5 +1,5 @@
 header.header
-  .header__container
+  .container.header__container
     .header__inner
       a(href="/").header__logo
         <img src="images/logo.svg" alt="Лого">
@@ -9,13 +9,8 @@ header.header
           each value, index in {'О компании' : 'about', 'Партнеры' : 'partners', 'Контакты' : 'contact'}
             li.header-menu__item
               a.header-menu__link(href= "/" + value + ".html")= index
-          //- li.header-menu__item
-          //-   a(href="#").header-menu__link О&nbsp;компании
-          //- li.header-menu__item
-          //-   a(href="#").header-menu__link Партнеры
-          //- li.header-menu__item
-          //-   a(href="#").header-menu__link Контакты
       .header__control
+        button.button.button_style_red.header-menu__button Связаться с нами
         button.header__btn.js_header_btn
          <svg width="66" height="26">
           <use xlink:href="images/sprite.svg#burger"></use>
@@ -23,8 +18,3 @@ header.header
         label.header__toggle.toggle
           input(type="checkbox" class="js_toggle_input")
           span
-        label.menu__toggle.toggle
-          input(type="checkbox" class="js_toggle_input")
-          span
-          span тёмная тема
-          span белая тема
