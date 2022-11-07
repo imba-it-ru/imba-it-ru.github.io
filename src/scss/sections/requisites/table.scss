@@ -2,25 +2,76 @@
   &__container {
     padding: 0 0 130px 440px;
     padding-top: 0;
+    @include media-tb {
+      padding: 0 0 100px 16px;
+      margin: 0 auto;
+    }
+    @include media-ts {
+      max-width: 640px;
+    }
+    @include media-mb {
+      max-width: 480px;
+      padding: 70px 12px;
+    }
+    @include media-ms {
+      max-width: 320px;
+    }
   }
 }
 
 .table-requisites {
   border-spacing: 32px 24px;
   margin-bottom: 32px;
+  margin-left: -32px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  @include media-mb {
+    border-spacing: initial;
+    margin-left: 0;
+    margin-bottom: 48px;
+  }
   &__title {
     padding-bottom: 40px;
+  }
+
+  &__row {
+    @include media-mb {
+      margin-bottom: 24px;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__col-name {
     width: 298px;
     padding-right: 32px;
     vertical-align: top;
+    @include media-mb {
+      width: 100%;
+      margin-bottom: 12px;
+    }
   }
 
   &__col-description {
     width: 400px;
     color: $text-white;
     vertical-align: top;
+    @include media-mb {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    margin-top: 100px;
+    @include media-mb {
+      margin-top: 64px;
+    }
+  }
+  tr, td {
+    @include media-mb {
+      display: block;
+    }
   }
 }
