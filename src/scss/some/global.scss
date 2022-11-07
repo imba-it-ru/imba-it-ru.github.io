@@ -81,6 +81,7 @@ button {
 input,
 textarea {
   outline: transparent;
+  font-family: 'Montserrat', sans-serif;
 
   &::placeholder {
       transition: .3s;

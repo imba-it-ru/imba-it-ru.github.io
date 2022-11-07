@@ -1,0 +1,39 @@
+section.section.maps-contacts 
+  .container.maps-contacts__container
+    h2.h2.maps-contacts__title Где нас найти
+    .maps-tabs
+      ul.maps-tabs__list
+        li.maps-tabs__item
+          button.lead-title.tab-name.maps-tabs__link(type="button") Офисы
+        li.maps-tabs__item
+          button.lead-title.tab-name.maps-tabs__link(type="button") Склады
+      section.maps-tabs__section
+        include ../../parts/map-office
+        ul.maps-tabs__info
+          li.maps-tabs__address
+            .maps-tabs__address-line
+            p.lead-text.maps-tabs__address-city Москва
+            p.fact.maps-tabs__address-text адрес
+            p.text.maps-tabs__address-location 117246, г. Москва, Научный проезд, 14А, стр.&nbsp;1, БЦ&nbsp;SMART-PARK
+          li.maps-tabs__address
+            .maps-tabs__address-line
+            p.lead-text.maps-tabs__address-city Санкт-Петербург
+            p.fact.maps-tabs__address-text адрес
+            p.text.maps-tabs__address-location 191040, г. Санкт-Петербург, Лиговский проспект, 50&nbsp;к.&nbsp;12, офис&nbsp;23
+      section.maps-tabs__section
+        include ../../parts/map-warehouses
+        ul.maps-tabs__info
+          li.maps-tabs__address
+            .maps-tabs__address-line
+            p.lead-text.maps-tabs__address-city Склад ООО «ИЛС»
+            p.fact.maps-tabs__address-text адрес
+            p.text.maps-tabs__address-location МО, Подольский район, Краснопахорское с/п, л-во Малинское, квартал 56
+            a.button.button_style_arrow.maps-tabs__btn(href="../files/ILS.pdf", target="_blank") Инструкция как добраться 
+          li.maps-tabs__address
+            .maps-tabs__address-line
+            p.lead-text.maps-tabs__address-city Склад ООО «Деловая Лига»
+            p.fact.maps-tabs__address-text адрес
+            p.text.maps-tabs__address-location г. Москва, ул. Шоссейная 90с57
+                        a.button.button_style_arrow.maps-tabs__btn(href="../files/delovaya-liga.pdf", target="_blank") Инструкция как добраться 
+
+
