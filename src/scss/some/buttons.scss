@@ -10,6 +10,9 @@
   Кнопка в виде ссылки
   <button type="button" class="button button_style_link">Оставить заказ →</button>
 
+  Кнопка со стрелкой (стрелка через афтер-класс сделана!!)
+  <button type="button" class="button button_style_arrow">Оставить заявку</button>
+
 */
 
 .button {
@@ -63,5 +66,26 @@
 				color: $red;
 			}
 		}
+    &_arrow {
+      color:$red;
+      text-transform: uppercase;
+      display: flex;
+      column-gap: 8px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: left;
+      justify-content: flex-start;
+      letter-spacing: 0.06em;
+      &::after {
+        content: url('../../images/arrow.svg');
+        // background-image: url('../../../images/arrow.svg');
+        display: block;
+        transition: transform 0.3s ease;
+      }
+      &:hover::after {
+				transform: translate(4px);
+			}
+    }
 	}
 }

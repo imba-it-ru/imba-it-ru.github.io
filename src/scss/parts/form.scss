@@ -1,0 +1,64 @@
+@import "../some/checkbox.scss";
+.form {
+  margin-top: 24px; 
+  &__fields {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+      label {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+            &:last-child {
+            margin-bottom: 0;
+          }
+      }
+  
+      input {
+          display: block;
+          width: 100%;
+          height: 48px;
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: 500;
+          color: $title-white;
+          padding: 16px 8px;
+          background-color: $text-gray;
+          border: 1px solid transparent;
+          transition: border-color .3s, color .3s;
+          &::placeholder {
+              color: $text-white;
+          }
+          &:focus {
+              border-color: #484848;
+          }
+          &.error {
+              border-color: $red;
+              color: $red;
+          }
+      }
+
+      span {
+          display: block;
+      }
+  }
+  
+  // &__confirm {
+  //     margin-bottom: 0;
+  // }
+  
+  &__btn {
+      display: block;
+      padding: 21px 27px;
+      margin-top: 40px;
+      @media (min-width: 769px) {
+          padding: 21px 41px;
+      }
+      @media (min-width: 1240px) {
+          padding: 21px 68px;
+      }
+  }
+}

@@ -1,0 +1,14 @@
+form.form(action="#", 
+          method="post", 
+          name="form-contact") 
+  fieldset.form__fields
+    label
+      input.js_input_name(type='text', name='Имя', placeholder='Имя*', required)
+    label
+      input.js_input_phone(type='text', name='Телефон', placeholder='Телефон*', required)
+    label
+      input.js_input_email(type='text', name='Почта', placeholder='Почта*', required)
+    label.form__confirm.checkbox
+      input.js_input_confirm(type='checkbox')
+      <span>Согласен с&nbsp;<a href="#" target="_blank">политикой конфиденциальности</a></span>
+  button.form__btn.btn.js_form_btn оставить заявку
