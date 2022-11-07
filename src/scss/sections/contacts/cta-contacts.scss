@@ -1,0 +1,81 @@
+.cta-contacts {
+  &__container {
+    padding-top: 0;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 142px;
+    @include media-tb {
+			column-gap: 124px;
+		}
+    @include media-ts {
+      grid-template-columns: 1fr;
+      gap: 64px 0;
+    }
+  }
+  &__column {
+    &-info {
+    }
+    &-form {
+      max-width: 408px;
+      @include media-tb {
+        max-width: 336px;
+      }
+      @include media-ts {
+        max-width: 500px;
+      }
+      @include media-mb {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__title {
+    max-width: 518px;
+    margin-bottom: 40px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    @include media-ts {
+      flex-direction: inherit;
+      column-gap: 64px;
+    }
+    @include media-ms {
+      flex-direction: column;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    column-gap: 32px;
+    @include media-tb {
+      flex-direction: column;
+      gap: 16px 0;
+    }
+    &-title {
+      width: 188px;
+    }
+    &-link {
+      transition: color .3s;
+      &:hover {
+        color: $text-white;
+      }
+    }
+  }
+
+  &__form {
+    &-title {
+      color: $title-white;
+      font-size: 18px;
+      line-height: 160%;
+      font-weight: 400;
+      margin-bottom: 24px;
+      @media (min-width: 769px) {
+          font-size: 20px;
+      }
+  }
+  }
+
+}

@@ -1,0 +1,118 @@
+.maps-contacts {
+  &__title {
+    margin-bottom: 80px;
+    @include media-tb {
+      margin-bottom: 64px;
+    }
+    @include media-mb {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.maps-tabs {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 80px;
+    @include media-tb {
+      margin-bottom: 64px;
+    }
+    @include media-mb {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__item {
+    border-bottom: 1px solid $red;
+    opacity: 30%;
+    color: $text-white;
+  }
+
+  &__item_active {
+    color:$title-white;
+    opacity: 100%;
+  }
+
+  &__link {
+		cursor: pointer;
+		background-color: transparent;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 24px;
+    border: none;
+  }
+  @include media-mb {
+    padding-bottom: 8px;
+  }
+
+  &__section {
+    display: none;
+    &_active {
+			display: block;
+		}
+  }
+
+  &__map-frame {
+    display: block;
+    height: 450px;
+    width: 100%;
+    @include media-tb {
+      height: 360px;
+    }
+    @include media-mb {
+      height: 280px;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: repeat(2, 408px);
+    column-gap: 32px;
+    margin-top: 130px;
+    @include media-tb {
+      grid-template-columns: repeat(2,1fr);
+      margin-top: 100px;
+    }
+    @include media-mb {
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+      margin-top: 40px;
+    }
+  }
+
+  &__address {
+    &-line {
+      width: 100%;
+      height: 1px;
+      background-color: $red;
+      margin-bottom: 24px;
+      @include media-mb {
+        margin-bottom: 16px;
+      }
+    }
+    &-city {
+      color: $title-white;
+      margin-bottom: 24px;
+      @include media-mb {
+        margin-bottom: 16px;
+      }
+    }
+    &-text {
+      margin-bottom: 16px;
+      @include media-mb {
+        margin-bottom: 8px;
+      }
+    }
+    &-location {
+      color:$title-white;
+    }
+  }
+  &__btn {
+    padding: 0;
+    margin-top: 24px;
+    @include media-mb {
+      margin-top: 16px;
+    }
+  }
+}
