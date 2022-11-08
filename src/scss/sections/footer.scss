@@ -1,0 +1,125 @@
+.footer {
+
+  &__container {
+    padding: 80px 6px;
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+    img {
+      max-width: 300px;
+      @include media-mb {
+        max-width: 136px;
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+    } 
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    @include media-tb {
+      flex-direction: column;
+      row-gap: 64px;
+      margin-bottom: 64px;
+    }
+    @include media-mb {
+      row-gap: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    column-gap: 32px;
+    margin-bottom: 40px;
+    @include media-tb {
+      margin-bottom: 0;
+      column-gap: 52px;
+    }
+    @include media-mb {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+    &-cta {
+      max-width: 408px;
+    }
+
+  }
+  &__title {
+    color: $title-white;
+    margin-bottom: 40px;
+    @include media-mb {
+      margin-bottom: 24px;
+    }
+  }
+  &__button {
+    padding: 24px 71px;
+  }
+
+  &-menu {
+    padding-top: 77px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    @include media-tb {
+      padding-top: 0;
+    }
+    @include media-mb {
+      row-gap: 16px;
+    }
+    &__title {
+      text-transform: uppercase;
+      color: $title-white;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      @include media-mb {
+        row-gap: 8px;
+      }
+    }
+
+    &__contact-link {
+      transition: color .3s;
+      &:hover {
+        color: $text-white;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-top: 74px;
+    @include media-tb {
+      padding-top: 0;
+    }
+  }
+
+  &__copy {
+    &-line {
+      width: 100%;
+      height: 1px;
+      background-color: $text-white;
+      margin-bottom: 24px;
+    }
+    &-box {
+      display: flex;
+      justify-content: space-between;
+      @include media-mb {
+        flex-direction: column;
+        row-gap: 8px;
+      }
+    }
+  }
+&__link {
+  width: 298px;
+}
+
+}
