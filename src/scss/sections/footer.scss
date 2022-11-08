@@ -90,6 +90,13 @@
         color: $text-white;
       }
     }
+
+    &__contact-social {
+      transition: opacity .3s;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
   }
 
   &__contacts {
