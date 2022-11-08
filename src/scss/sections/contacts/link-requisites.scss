@@ -1,10 +1,5 @@
 .link-requisites {
-  background-color: $red;
-  transition: background-color .3s;
-  &:hover {
-    background-color: $red-opacity;
-    transition: background-color .3s;
-  }
+
   @include media-tb {
     height: 100px;
   }
@@ -13,7 +8,13 @@
   }
   &__btn {
     display: block;
-    width: 100%;    
+    width: 100%;  
+    background-color: $red;
+    transition: background-color .3s;
+    &:hover {
+      background-color: $red-opacity;
+      transition: background-color .3s;
+    }  
   }
   
   &__container {
