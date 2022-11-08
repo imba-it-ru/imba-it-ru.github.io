@@ -1,0 +1,9 @@
+.maps-tabs__map {
+  filter: grayscale(1) brightness(1) invert(1);
+}
+.map-circle-placemark._comma._size_medium._outline {
+  svg {
+    color: #000000;
+  }
+
+}
