@@ -1,7 +1,14 @@
 .small-logo {
 
   &__container {
-    padding: 80px 6px;
+    padding: 0 6px 80px;
+  }
+
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: $red;
+    margin-bottom: 80px;
   }
 
   &__content-logo {
@@ -27,8 +34,8 @@
     &-box {
     position: relative;
     width: 100%;
-    @include media-mb {
-      width: 120px;
+    @include media-ts {
+      width: 80px;
     }
   }
     &-white {
