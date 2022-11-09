@@ -1,7 +1,15 @@
-.popup-logo
+section.popup-logo
   .popup-logo__container
     button.popup-logo__close
+      <svg width="16" height="16">
+        <use xlink:href="./images/sprite.svg#exit"></use>
+      </svg>
     .popup-logo__content
-      img.popup-logo__img
-      p.popup-logo__name ИМЯ
+      img.popup-logo__img(src="./images/partners/big-logo/color/logo2.svg", alt="")
+      .popup-logo__info
+        p.lead-title.popup-logo__name Utinet
+        .popup-logo__tag
+          .popup-logo__tag-marker
+          p.text-s.popup-logo__tag-text Бизнес-партнер
+        p.lead-text.popup-logo__text Российский роизводитель серверов, систем хранения данных и программного обеспечения.
     
