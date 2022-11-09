@@ -1,30 +1,27 @@
-// бургер-меню
-const headerBtn = document.querySelector('.js_header_btn'); // кнопка-бургер в хедере;
-const menu = document.querySelector('.js_menu'); // поп-ап с бургер-меню;
-const menuOverlay = document.querySelector('.js_menu_overlay'); // оверлей для поп-апа с бургер-меню;
-const menuExit = document.querySelector('.js_menu_exit'); // кнопка закрытия бургер-меню (крестик);
- 
-headerBtn.addEventListener('click', () => { // при клике на кнопку-бургер;
-  menuOverlay.classList.add('active');
-  menu.classList.add('active-half');
-  menuExit.classList.add('active');
-  bodyFixPosition();
-    menuTabs.forEach(tab => {
-      tab.classList.remove('active');
-    });
-});
+// import { openform } from './header/openPopupForm.js';
+import { PopupWithForm } from '../utils/popupForm.js';
+import { burgerMenu } from './header/burgerMenu.js';
 
-menuExit.addEventListener('click', () => { // при клике на кнопку закрытия бургер-меню (крестик);
-  closeMenu();
-});
+export function headerInit() {
+	try {
+    const popupFormElement = document.querySelector('#popupform');
+		const popupForm = new PopupWithForm(popupFormElement, (inputValues) => {
+			console.log(inputValues);
+			// коллбэк / запросы на сервер
+			popupForm.closePopup();
+		});
 
-menuOverlay.addEventListener('click', () => { // при клике на оверлей для поп-апа с бургер-меню;
-  closeMenu();
-});
+		popupForm.setEventListeners();
 
-const closeMenu = () => { // функция закрытия поп-апа с бургер-меню;
-  menuOverlay.classList.remove('active');
-  menu.classList.remove('active-half', 'active-full');
-  menuExit.classList.remove('active');
-  // bodyUnfixPosition();
+		const openPopupBtns = document.querySelectorAll('.popup-form-open');
+		openPopupBtns.forEach((btn) => {
+			btn.addEventListener('click', () => {
+				popupForm.openPopup();
+			});
+		});
+
+  } catch (error) {}
+  burgerMenu()
+  // openform();
 }
+

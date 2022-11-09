@@ -55,6 +55,9 @@
     column-gap: 8px;
     align-items: center;
     margin-top: -26px;
+    @include media-ts {
+      margin-top: 0;
+    }
   }
 
   &__marker {

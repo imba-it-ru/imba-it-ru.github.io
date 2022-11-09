@@ -16,11 +16,17 @@
     grid-template-columns: repeat(8, 1fr);
     gap: 40px 32px;
     @include media-tb {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @include media-ts {
       grid-template-columns: repeat(4, 1fr);
     }
     @include media-mb {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px 16px;
+    }
+    @include media-ms {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   &__btn {
@@ -28,13 +34,16 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    @include media-tb {
+      row-gap: 8px;
+    }
   }
 
   &__img {
     &-box {
     position: relative;
     width: 100%;
-    @include media-ts {
+    @include media-tb {
       width: 80px;
     }
   }
