@@ -66,6 +66,13 @@
 
   &__button {
     margin-top: 100px;
+    padding: 24px 56px;
+    &:hover {
+      padding: 22px 54px;
+      @include media-mb {
+        padding: 22px 54px;
+      }
+    }
     @include media-mb {
       margin-top: 64px;
     }

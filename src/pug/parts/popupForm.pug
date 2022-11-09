@@ -1,0 +1,22 @@
+section.popup-form
+  .popup-form__container
+    button.popup-form__close
+      <svg width="16" height="16">
+        <use xlink:href="./images/sprite.svg#exit"></use>
+      </svg>
+    .popup-form__content
+      p.lead-text.popup-form__title Оставите заявку на БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ
+      form.form.fade-in(action="#", 
+                method="post", 
+                name="form-popup") 
+        fieldset.form__fields
+          label
+            input.js_input_name(type='text', name='Имя', placeholder='Имя*', required)
+          label
+            input.js_input_phone(type='text', name='Телефон', placeholder='Телефон*', required)
+          label
+            input.js_input_email(type='text', name='Почта', placeholder='Почта*', required)
+          label.form__confirm.checkbox
+            input.js_input_confirm(type='checkbox')
+            <span>Согласен с&nbsp;<a href="#" target="_blank">политикой конфиденциальности</a></span>
+        button.button.button_style_red.form__btn оставить заявку

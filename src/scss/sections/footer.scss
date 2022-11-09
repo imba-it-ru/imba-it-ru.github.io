@@ -1,3 +1,5 @@
+@import "../parts/popup-form.scss";
+
 .footer {
 
   &__container {
@@ -55,9 +57,7 @@
       margin-bottom: 24px;
     }
   }
-  &__button {
-    padding: 24px 71px;
-  }
+
 
   &-menu {
     padding-top: 77px;
