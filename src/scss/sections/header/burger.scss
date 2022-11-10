@@ -1,0 +1,134 @@
+.burger {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  // right: 0;
+  width: 66.6%;
+  height: 100%;
+  padding: 78px 0 0 12px;
+  background-color: $black-17;
+  transition: .5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(100%);
+  @include media-tb {
+    padding: 80px 80px 0;
+    width: 50%;
+  }
+  @include media-mb {
+
+    width: 100%;
+  }
+
+  &.active-half {
+    transform: translate(50%);
+    @include media-ts {
+        // transform: translate(0);
+    }
+  }
+
+  &.active-full {
+      transform: translate(0);
+  }
+
+  &__overlay {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(23, 23, 23, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+  &__exit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    @media (min-width: 769px) {
+
+    }
+    width: 52px;
+    height: 52px;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+  }
+
+  &__container {
+    display: flex;
+    max-height: 100%;
+    height: auto;
+    margin: 0 -10px;
+    @include media-ts {
+      height: 100%;
+    }
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    overflow-y: auto;
+    width: 50%;
+    padding: 0 10px 80px;
+    @include media-ts {
+      width: 100%;
+      height: 100%;
+      padding-bottom: 70px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    margin-bottom: 120px;
+    @include media-mb {
+      margin-bottom: 80px;
+      row-gap: 24px;
+    }
+  }
+
+  &__link {
+    transition: color 0.3s;
+    text-transform: uppercase;
+    &:hover {
+      color:$red;
+    }
+  }
+
+  &__contacts {
+    display:flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 80px;
+    @include media-mb {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__toggle {
+    display: none;
+    @include media-ts {
+        display: block;
+    }
+  }
+
+}
