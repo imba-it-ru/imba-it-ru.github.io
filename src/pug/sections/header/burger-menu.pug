@@ -1,0 +1,19 @@
+.burger__overlay.js_menu_overlay
+.burger.js_menu
+  .burger__container
+    button.burger__exit.js_menu_exit(type='button')
+      <svg width="16" height="16">
+        <use xlink:href="images/sprite.svg#exit"></use>
+      </svg>
+    .burger__col
+      ul.burger__list
+        each value, index in {'О компании' : 'about', 'Партнеры' : 'partners', 'Реквизиты' : 'requisites', 'Контакты' : 'contacts'}
+          li.h3.burger__item
+            a.burger__link(href= "/" + value + ".html")= index
+      .burger__contacts
+        a.h3.burger__contacts__link(href="tel:+74959693977") +7 (495) 969 39 77
+        a.h3.burger__contacts__link(href="mailto:hello@imba-it.ru") hello@imba-it.ru
+      button.button.button_style_red.burger__button.popup-form-open(type='button') Связаться
+      label.burger__toggle.toggle
+        input(type="checkbox" class="js_toggle_input")
+        span
