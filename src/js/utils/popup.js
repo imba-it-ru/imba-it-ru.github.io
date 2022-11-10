@@ -7,13 +7,13 @@ export class Popup {
     this.setEventListeners = this.setEventListeners.bind(this);
   }
   openPopup () {
-    this._popup.classList.add('popup_visible');
+    this._popup.classList.add('popup-form_visible');
 		document.body.style.overflow = 'hidden';
     document.addEventListener ('keydown', this._setEscHandler);
   }
    
   closePopup () {
-    this._popup.classList.remove('popup_visible');
+    this._popup.classList.remove('popup-form_visible');
 		document.body.style.overflow = '';
     document.removeEventListener ('keydown', this._setEscHandler);
   }
@@ -24,7 +24,8 @@ export class Popup {
   }
   setEventListeners () {
     this._popup.addEventListener('mousedown', (evt) => {
-        if ((evt.target.classList.contains('popup_visible'))||(evt.target.classList.contains('popup__btn-close'))) {
+      console.log(evt.target, evt.currentTarget);
+        if ((evt.target.classList.contains('popup-form_visible'))||(evt.target.closest('.popup-form__close'))) {
           this.closePopup()
         }
     })
