@@ -3,3 +3,7 @@ node_modules
 .vscode
 assets
 package-lock.json
+index.html
+partners.html
+requisites.html
+contacts.html
