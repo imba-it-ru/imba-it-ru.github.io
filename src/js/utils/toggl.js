@@ -1,5 +1,4 @@
 // переключатель светлая тема / тёмная тема
-
 export const toggleInputs = document.querySelectorAll('.js_toggle_input'); // чекбоксы,переключающие тему (в хедере и мобильном меню);
 
 if (localStorage.getItem("theme") === "light") {

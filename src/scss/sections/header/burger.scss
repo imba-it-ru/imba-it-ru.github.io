@@ -2,10 +2,10 @@
   position: fixed;
   z-index: 20;
   top: 0;
-  // right: 0;
-  width: 66.6%;
+  right: 0;
+  width: 600px;
   height: 100%;
-  padding: 78px 0 0 12px;
+  padding: 78px 0 0 32px;
   background-color: $black-17;
   transition: .5s;
   display: flex;
@@ -14,7 +14,7 @@
   transform: translate(100%);
   @include media-tb {
     padding: 80px 80px 0;
-    width: 50%;
+    // width: 50%;
   }
   @include media-mb {
 
@@ -22,7 +22,7 @@
   }
 
   &.active-half {
-    transform: translate(50%);
+    transform: translate(0);
     @include media-ts {
         // transform: translate(0);
     }
@@ -86,11 +86,9 @@
     align-items: flex-start;
     height: 100%;
     overflow-y: auto;
-    width: 50%;
+    width: 100%;
     padding: 0 10px 80px;
     @include media-ts {
-      width: 100%;
-      height: 100%;
       padding-bottom: 70px;
     }
   }
