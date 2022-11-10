@@ -1,27 +1,10 @@
-// import { openform } from './header/openPopupForm.js';
+import { openform } from './header/openPopupForm.js';
 import { PopupWithForm } from '../utils/popupForm.js';
 // import { toggleInputs } from '../utils/toggl.js';
 import { burgerMenu } from './header/burgerMenu.js';
 
 export function headerInit() {
 	try {
-    const popupFormElement = document.querySelector('#popupform');
-		const popupForm = new PopupWithForm(popupFormElement, (inputValues) => {
-			console.log(inputValues);
-			// коллбэк / запросы на сервер
-			popupForm.closePopup();
-		});
-
-		popupForm.setEventListeners();
-
-		const openPopupBtns = document.querySelectorAll('.popup-form-open');
-		openPopupBtns.forEach((btn) => {
-			btn.addEventListener('click', () => {
-				popupForm.openPopup();
-			});
-		});
-
-
     // переключатель светлая тема / тёмная тема
 
    const toggleInputs = document.querySelectorAll('.js_toggle_input'); // чекбоксы,переключающие тему (в хедере и мобильном меню);
@@ -75,9 +58,7 @@ export function headerInit() {
         });
 
 });
-  } catch (error) {}
-  burgerMenu()
-  // openform();
+  } catch (error) {console.log(error);}
+  burgerMenu();
+  openform();
 }
-
-headerInit();
