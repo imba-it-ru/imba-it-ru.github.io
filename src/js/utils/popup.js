@@ -1,3 +1,5 @@
+import { body } from "./body";
+
 export class Popup {
   constructor (popup) {
     this._popup = popup;
@@ -9,12 +11,13 @@ export class Popup {
   openPopup () {
     this._popup.classList.add('popup-form_visible');
 		document.body.style.overflow = 'hidden';
+    body.unscroll();
     document.addEventListener ('keydown', this._setEscHandler);
   }
    
   closePopup () {
     this._popup.classList.remove('popup-form_visible');
-		document.body.style.overflow = '';
+		body.scroll();
     document.removeEventListener ('keydown', this._setEscHandler);
   }
   _setEscHandler (evt) {
