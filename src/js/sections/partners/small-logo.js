@@ -31,9 +31,6 @@ function createBox(obj) {
     button.append(textBox);
   }
 
-
-
-
   button.addEventListener('click', (event) => {
     popup.open(obj);
   });

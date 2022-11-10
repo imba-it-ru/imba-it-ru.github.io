@@ -1,3 +1,5 @@
+import { body } from "../../utils/body";
+
 export function burgerMenu() {
 	try {
     const headerBtn = document.querySelector('.js_header_btn'); // кнопка-бургер в хедере;
@@ -9,10 +11,10 @@ export function burgerMenu() {
       menuOverlay.classList.add('active');
       menu.classList.add('active-half');
       menuExit.classList.add('active');
-      bodyFixPosition();
-        menuTabs.forEach(tab => {
-          tab.classList.remove('active');
-        });
+      body.unscroll();
+        // menuTabs.forEach(tab => {
+        //   tab.classList.remove('active');
+        // });
     });
 
     menuExit.addEventListener('click', () => { // при клике на кнопку закрытия бургер-меню (крестик);
@@ -27,7 +29,7 @@ export function burgerMenu() {
       menuOverlay.classList.remove('active');
       menu.classList.remove('active-half', 'active-full');
       menuExit.classList.remove('active');
-      // bodyUnfixPosition();
+      body.scroll();
     }
 	} catch (error) {}
 }
