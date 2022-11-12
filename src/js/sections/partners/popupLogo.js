@@ -22,10 +22,17 @@ function open(obj) {
 }
 
 function changeContent(obj) {
-  UI.img.src = obj.imgColor;
+  
+  
   UI.name.textContent = obj.name;
   UI.subtitle.textContent = obj.subtitle;
   UI.text.textContent = obj.text;
+
+  if (document.body.classList.contains('light-mode')) {
+    UI.img.src = obj.imgColorWhite;
+  } else {
+    UI.img.src = obj.imgColor;
+  }
 
   if (obj.subtitle == '') {
     UI.marker.style.display = 'none';

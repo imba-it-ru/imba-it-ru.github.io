@@ -30,6 +30,9 @@
     @include media-ts {
       max-width: 600px;
     }
+    .light-mode & {
+      background-color: $white-fb;
+    }
   }
 
   &__close {
@@ -67,6 +70,11 @@
 
   &__name {
     color: $text-white;
+  }
+
+  &__text {
+    color: $title-white;
+    
   }
 
   &__tag {
