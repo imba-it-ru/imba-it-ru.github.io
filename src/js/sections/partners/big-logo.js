@@ -19,6 +19,7 @@ function createBox(obj) {
   const imgWhite = createImg(obj.imgWhite, 'big-logo__img-white');
   const imgBlack = createImg(obj.imgBlack, 'big-logo__img-black');
   const imgColor = createImg(obj.imgColor, 'big-logo__img-color');
+  const imgColorWhite = createImg(obj.imgColorWhite, 'big-logo__img-color-white');
   const textBox = createDivBox('big-logo__text-box');
   const marker = createDivBox('big-logo__marker');
   const subtitle = createSubtitle(obj.subtitle, ['text-s', 'big-logo__logo-text']);
@@ -26,6 +27,7 @@ function createBox(obj) {
   imgBox.append(imgWhite);
   imgBox.append(imgBlack);
   imgBox.append(imgColor);
+  imgBox.append(imgColorWhite);
 
   button.append(imgBox);
 

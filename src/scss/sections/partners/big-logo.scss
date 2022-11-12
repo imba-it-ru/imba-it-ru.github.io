@@ -61,6 +61,24 @@
       &:hover {
         opacity: 100%;
       }
+      .light-mode & {
+        display: none;
+      }
+    }
+    &-color-white {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      display: none;
+      &:hover {
+        opacity: 100%;
+      }
+      .light-mode & {
+        display: block;
+      }
     }
   }
 

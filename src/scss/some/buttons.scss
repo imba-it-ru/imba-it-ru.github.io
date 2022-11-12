@@ -42,7 +42,13 @@
 				background-color: transparent;
         color:$red;
         box-shadow: 0px 4px 8px rgba(240, 85, 85, 0.35);
+        .light-mode & {
+          color:$title-black;
+        }
 			}
+      .light-mode & {
+        color:$white-fb;
+      }
 		}
 
 		&_outlined {

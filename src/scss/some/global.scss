@@ -169,7 +169,7 @@ span.error {
   background-color: #FBFBFB;
 
   .header__btn svg {
-      stroke: #020202;
+      stroke: $title-black;
   }
 
   .intro {
@@ -189,7 +189,7 @@ span.error {
   }
 
   .card__links a:nth-child(1) {
-      color: #020202;
+      color: $title-black;
 
       &:hover {
           color: #808080;
@@ -227,7 +227,7 @@ span.error {
   .footer__col-title,
   .footer__list a,
   .footer__contacts a {
-      color: #020202;
+      color: $title-black;
   }
 
   .item-projects__lines {
@@ -257,11 +257,11 @@ span.error {
 
   .btn {
       &.btn--tr {
-          color: #020202;
-          border-color: #020202;
+          color: $title-black;
+          border-color: $title-black;
 
           &:hover {
-              color: #020202;
+              color: $title-black;
           }
       }
   }
@@ -291,7 +291,7 @@ span.error {
   }
 
   .checkbox input+span::before {
-      border-color: #020202;
+      border-color: $title-black;
   }
 
   .header__logo img:nth-child(1),

@@ -12,9 +12,6 @@ export function burgerMenu() {
       menu.classList.add('active-half');
       menuExit.classList.add('active');
       body.unscroll();
-        // menuTabs.forEach(tab => {
-        //   tab.classList.remove('active');
-        // });
     });
 
     menuExit.addEventListener('click', () => { // при клике на кнопку закрытия бургер-меню (крестик);
