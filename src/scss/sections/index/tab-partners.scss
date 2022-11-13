@@ -1,0 +1,41 @@
+.tab-partners {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 80px;
+    @include media-tb {
+      margin-bottom: 64px;
+    }
+    @include media-mb {
+      margin-bottom: 40px;
+    }
+  }
+  &__item {
+    border-bottom: 1px solid $red;
+    opacity: 30%;
+    color: $text-white;
+  }
+
+  &__item_active {
+    color:$title-white;
+    opacity: 100%;
+  }
+  &__link {
+		cursor: pointer;
+		background-color: transparent;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 24px;
+    border: none;
+  }
+  @include media-mb {
+    padding-bottom: 8px;
+  }
+
+  &__section {
+    display: none;
+    &_active {
+			display: block;
+		}
+  }
+}
