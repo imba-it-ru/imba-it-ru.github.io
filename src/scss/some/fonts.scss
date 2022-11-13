@@ -77,11 +77,6 @@
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   color: $text-white;
 }
-// .light-mode .h1,
-// .light-mode .h2,
-// .light-mode .h3 {
-//   color: $black-20;
-// }
 
 .h1 {
 	@extend %titles;

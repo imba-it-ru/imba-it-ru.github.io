@@ -1,0 +1,57 @@
+.solutions {
+  &__container {
+    padding: 100px 6px;
+    @include media-tb {
+      padding: 100px 16px;
+      margin: 0 auto;
+    }
+    @include media-mb {
+      padding: 48px 12px;
+    }
+  }
+
+  &__line {
+    width: 100%;
+    height: 1px;
+    background-color: $red;
+    margin-bottom: 40px;
+    @include media-tb {
+      margin-bottom: 24px;
+    }
+    @include media-mb {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-tb {
+      flex-direction: column;
+      row-gap: 40px;
+      align-items: flex-start;
+      // width: 100%;
+    }
+  }
+
+  &__title {
+    max-width: 753px;
+    span {
+      color:$red;
+    }
+  }
+
+  &__btn {
+    padding: 24px 40px;
+    @include media-ms {
+      padding: 24px 28px;
+    }
+    &:hover {
+      padding: 22px 38px;
+      @include media-ms {
+        padding: 22px 26px;
+      }
+    }
+  }
+}
