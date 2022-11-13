@@ -1,0 +1,49 @@
+.services {
+  &__container {
+
+  }
+  &__cards {
+    display: grid;
+    gap: 48px 32px;
+    grid-template-columns: repeat(3, 1fr);
+    @include media-tb {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 64px 32px;
+    }
+    @include media-mb {
+      grid-template-columns: 1fr;
+      row-gap: 40px;
+    }
+  }
+  &-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    @include media-mb {
+      row-gap: 16px;
+    }
+    &__img {
+      width: 80px;
+    }
+    &__title {
+      color: $title-white;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+    }
+    &__item {
+      display: flex;
+      column-gap: 16px;
+    }
+    &__marker {
+      width: 8px;
+      height: 8px;
+      background-color: $red;
+      flex-shrink: 0;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+  }
+}
