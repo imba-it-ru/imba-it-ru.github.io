@@ -1,8 +1,13 @@
 .about {
   &__title {
     margin-bottom: 104px;
+    font-size: 60px;
     @include media-tb {
       margin-bottom: 64px;
+      font-size: 42px;
+    }
+    @include media-mb {
+      font-size: 28px;
     }
     span {
       color:$red;

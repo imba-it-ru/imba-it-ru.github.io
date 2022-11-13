@@ -12,7 +12,6 @@ export function makeBigLogo() {
   });
 };
 
-
 function createBox(obj) {
   const button = createButton('big-logo__btn');
   const imgBox = createDivBox('big-logo__img-box');

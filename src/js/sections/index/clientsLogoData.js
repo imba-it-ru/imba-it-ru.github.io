@@ -1,4 +1,4 @@
-export const data = [
+export const dataClients = [
   {
     imgWhite:'/images/clients/white/logo1.svg',
     imgColor:'/images/clients/color/logo1.svg',

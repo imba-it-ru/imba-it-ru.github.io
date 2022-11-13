@@ -54,6 +54,11 @@ export class Tabs {
     }
   }
 
+  setActiveTab(index) {
+    const btn = this._headers[index];
+    this._setActiveTab(btn);
+  }
+
   _toggleClass(boolean) {
     this._activeTab
       ? this._activeTab.classList.toggle(this._classes.TAB_BTN_ACTIVE, boolean)
