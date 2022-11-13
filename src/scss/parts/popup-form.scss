@@ -36,6 +36,9 @@
     @include media-ms {
       padding: 64px 12px;
     }
+    .light-mode & {
+      background-color: $white-fb;
+    }
   }
 
   &__close {
