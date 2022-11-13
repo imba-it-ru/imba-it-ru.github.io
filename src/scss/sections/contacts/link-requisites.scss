@@ -39,7 +39,7 @@
     }
   }
 
-  &__icon {
+  &__icon-box {
     @include media-tb {
       width: 80px;
     }
@@ -51,6 +51,19 @@
     }
   }
 
+  &__icon {
+    .light-mode & {
+      display: none;
+    }
+  }
+
+  &__icon_white {
+    display: none;
+    .light-mode & {
+      display: block;
+    }
+  }
+
   &__title {
     color:$title-black;
     @include media-tb {
@@ -58,6 +71,9 @@
     }
     @include media-mb {
       font-size: 18px;
+    }
+    .light-mode & {
+      color: $title-white;
     }
   }
 
@@ -77,15 +93,16 @@
       width: 60px;
       height: 60px;
     }
-    // &_img {
-    //   width: 81px;
-    //   @include media-tb {
-    //     width:59px;
-    //   }
-    //   @include media-mb {
-    //     width: 35px;
-    //   }
-    // }
+    .light-mode & {
+      display: none;
+    }
+
+    &_white {
+      display: none;
+      .light-mode & {
+        display: block;
+      }
+    }
   }
 
 }

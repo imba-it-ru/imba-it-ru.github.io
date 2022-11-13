@@ -62,8 +62,11 @@
           font-weight: 500;
           font-size: 14px;
           line-height: 160%;
-          color: #ECECEC;
+          color: $title-white;
           text-transform: uppercase;
+          .light-mode & {
+            color: $title-black;
+          }
       }
       &__button {
         padding: 17px 29px;
@@ -87,7 +90,7 @@
       width: 78px;
       height: 40px;
       svg {
-          stroke:#ECECEC;
+          stroke:$title-white;
       }
   }
 

@@ -185,6 +185,9 @@
 	@include media-mb {
 		font-size: 16px;
 	}
+  .light-mode & {
+    color: $text-black;
+  }
 }
 
 .text-s {
@@ -213,4 +216,7 @@
 	@include media-mb {
 		font-size: 12px;
 	}
+  .light-mode & {
+    color: $text-black;
+  }
 }

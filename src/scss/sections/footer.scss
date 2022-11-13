@@ -88,13 +88,32 @@
       transition: color .3s;
       &:hover {
         color: $text-white;
+        .light-mode & {
+          color: $text-white;
+        }
       }
     }
 
     &__contact-social {
       transition: opacity .3s;
+      position: relative;
       &:hover {
         opacity: 0.6;
+      }
+    }
+
+    &__contact-icon {
+      .light-mode & {
+        display: none;
+      }
+      &_black {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        .light-mode & {
+          display: block;
+        }
       }
     }
   }
@@ -115,6 +134,9 @@
       height: 1px;
       background-color: $text-white;
       margin-bottom: 24px;
+      .light-mode & {
+        background-color: $line-red;
+      }
     }
     &-box {
       display: flex;

@@ -58,6 +58,7 @@
   &__col-description {
     width: 400px;
     color: $text-white;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     vertical-align: top;
     @include media-mb {
       width: 100%;
