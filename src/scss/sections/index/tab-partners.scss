@@ -1,3 +1,6 @@
+@import "./../parts/index-clients.scss";
+@import "./../parts/index-partners.scss";
+
 .tab-partners {
   &__list {
     display: grid;
@@ -14,11 +17,10 @@
     border-bottom: 1px solid $red;
     opacity: 30%;
     color: $text-white;
-  }
-
-  &__item_active {
-    color:$title-white;
-    opacity: 100%;
+    &_active {
+      color:$title-white;
+      opacity: 100%;
+    }
   }
   &__link {
 		cursor: pointer;

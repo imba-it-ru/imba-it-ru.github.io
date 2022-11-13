@@ -6,6 +6,15 @@ function contactsPageInit() {
 	try {
 		const mapTabs = new Tabs(UI_SELECTORS, UI_CLASSES);
 		mapTabs.initTabs();
+
+    const url = new URL(window.location.href);
+    const number = url.searchParams.get('tab');
+
+    if (number === '1') {
+      mapTabs.setActiveTab(1);
+    }
+
+
   } catch (error) {}
   headerInit();
 }

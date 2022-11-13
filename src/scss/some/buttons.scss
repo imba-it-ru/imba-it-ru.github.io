@@ -77,6 +77,8 @@
 			padding-left: 0;
 			color: $red;
 			transition: color, 0.3s ease;
+      font-size: 14px;
+      letter-spacing: 0.06em;
 			&:hover {
 				color: $red;
 			}
