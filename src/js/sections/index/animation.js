@@ -96,17 +96,6 @@ export function createTitleAnimation() {
 
 		tl.fromTo(title, { y: 0 }, { y: 0, duration: 1, ease: 'linear' });
 	});
-
-	// gsap.timeline({
-	// 	scrollTrigger: {
-	// 		trigger: title,
-	// 		pin: title, // pin the trigger element while active
-	// 		start: 'center center', // when the top of the trigger hits the top of the viewport
-	// 		end: bound, // end after scrolling 500px beyond the start
-	// 		scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-	// 		markers: true,
-	// 	},
-	// });
 }
 
 function getClientRectAttribute(elem, attribute) {

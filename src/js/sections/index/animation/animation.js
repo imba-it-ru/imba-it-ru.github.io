@@ -4,8 +4,6 @@ import { UI } from './ui';
 const MAX_LENGTH = 0.15;
 const MAX_STEP = 0.001;
 
-const WIDTH = UI.CANVAS.clientWidth;
-const HEIGHT = UI.CANVAS.clientHeight;
 const DISTANCE = 20;
 const RADIUS = 1;
 const CENTER = {
@@ -14,11 +12,6 @@ const CENTER = {
 	Z: DISTANCE,
 };
 const TIME_KOEFF = 500;
-
-const minSize = Math.min(WIDTH, HEIGHT);
-console.log(minSize / 3);
-
-const KKK = minSize / 3;
 
 const COORDS = {
 	A: {
@@ -43,7 +36,24 @@ const state = {
 	ctx: undefined,
 	dots: [],
 	background: WHITE,
+	KKK: 0,
+	WIDTH: 0,
+	HEIGHT: 0,
 };
+
+try {
+	const WIDTH = UI.CANVAS.clientWidth;
+	const HEIGHT = UI.CANVAS.clientHeight;
+
+	const minSize = Math.min(WIDTH, HEIGHT);
+	state.KKK = minSize / 3;
+
+	state.WIDTH = WIDTH;
+	state.HEIGHT = HEIGHT;
+
+	create();
+	animate();
+} catch (error) {}
 
 export function setRotate(int) {
 	// index.textContent = int.toFixed(2);
@@ -63,9 +73,6 @@ export function setBackground(isWhite) {
 		state.background = BLACK;
 	}
 }
-
-create();
-animate();
 
 function create() {
 	createDots();
@@ -124,8 +131,8 @@ function createDots() {
 }
 
 function createCanvas() {
-	UI.CANVAS.width = WIDTH;
-	UI.CANVAS.height = HEIGHT;
+	UI.CANVAS.width = state.WIDTH;
+	UI.CANVAS.height = state.HEIGHT;
 	const ctx = UI.CANVAS.getContext('2d');
 	ctx.fillRect(0, 0, UI.CANVAS.width, UI.CANVAS.height);
 
@@ -146,11 +153,11 @@ function draw() {
 function drawDot(dot) {
 	const k = DISTANCE / dot.z;
 
-	const xc = WIDTH / 2;
-	const yc = HEIGHT / 2;
+	const xc = state.WIDTH / 2;
+	const yc = state.HEIGHT / 2;
 
-	const xDisplay = KKK * k * dot.x + xc;
-	const yDisplay = -KKK * k * dot.y + yc;
+	const xDisplay = state.KKK * k * dot.x + xc;
+	const yDisplay = -state.KKK * k * dot.y + yc;
 
 	dot.xDisplay = xDisplay;
 	dot.yDisplay = yDisplay;
