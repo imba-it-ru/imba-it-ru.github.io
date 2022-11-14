@@ -1,52 +1,52 @@
+import { setBackground as setCanvasBackground } from '../sections/index/animation/animation';
+
 // переключатель светлая тема / тёмная тема
 export const toggleInputs = document.querySelectorAll('.js_toggle_input'); // чекбоксы,переключающие тему (в хедере и мобильном меню);
 
-if (localStorage.getItem("theme") === "light") {
+export function createDarkWhiteMode() {
+	if (localStorage.getItem('theme') === 'light') {
+		toggleInputs.forEach((input) => {
+			input.checked = true;
+		});
 
-    toggleInputs.forEach(input => {
-        input.checked = true;
-    });
+		setLightMode();
+	} else {
+		toggleInputs.forEach((input) => {
+			input.checked = false;
+		});
 
-    document.body.classList.add('light-mode');
-    console.log('светлая тема');
+		setDarkMode();
+	}
 
-} else {
+	toggleInputs.forEach((input) => {
+		input.addEventListener('change', () => {
+			console.log('абобааа');
+			if (input.checked) {
+				toggleInputs.forEach((input) => {
+					input.checked = true;
+				});
 
-    toggleInputs.forEach(input => {
-        input.checked = false;
-    });
+				localStorage.setItem('theme', 'light');
+				setLightMode();
+			} else {
+				toggleInputs.forEach((input) => {
+					input.checked = false;
+				});
 
-    document.body.classList.remove('light-mode');
-    console.log('тёмная тема');
-
+				localStorage.setItem('theme', 'dark');
+				setDarkMode();
+			}
+		});
+	});
 }
 
-toggleInputs.forEach(input => {
-
-    input.addEventListener('change', () => {
-
-        if (input.checked) {
-
-            toggleInputs.forEach(input => {
-                input.checked = true;
-            });
-
-            localStorage.setItem("theme", "light")
-            document.body.classList.add('light-mode');
-            console.log('светлая тема');
-
-        } else {
-
-            toggleInputs.forEach(input => {
-                input.checked = false;
-            });
-
-            localStorage.setItem("theme", "dark")
-            document.body.classList.remove('light-mode');
-            console.log('тёмная тема');
-
-        }
-
-    });
-
-});
+function setLightMode() {
+	document.body.classList.add('light-mode');
+	setCanvasBackground(true);
+	console.log('светлая тема');
+}
+function setDarkMode() {
+	document.body.classList.remove('light-mode');
+	setCanvasBackground(false);
+	console.log('тёмная тема');
+}

@@ -1,53 +1,55 @@
 .about {
-  &__title {
-    margin-bottom: 104px;
-    font-size: 60px;
-    @include media-tb {
-      margin-bottom: 64px;
-      font-size: 42px;
-    }
-    @include media-mb {
-      font-size: 28px;
-    }
-    span {
-      color:$red;
-    }
-  }
+	position: relative;
+	z-index: 1;
 
-  &-info {
-    margin-left: 440px;
-    @include media-tb {
-      margin-left: 0;
-    }
-    &__text {
-      width: 738px; 
-      margin-bottom: 80px;
-      @include media-tb {
-        width: 100%;
-        margin-bottom: 64px;
-      }
-    }
-    &__lines {
-      margin-top: 0;
-      margin-bottom: 32px;
-    }
-    &__facts {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 64px 32px;
-      @include media-mb {
-        grid-template-columns: 1fr;
-      }
-    }
-  }
+	&__title {
+		margin-bottom: 104px;
+		font-size: 60px;
+		@include media-tb {
+			margin-bottom: 64px;
+			font-size: 42px;
+		}
+		@include media-mb {
+			font-size: 28px;
+		}
+		span {
+			color: $red;
+		}
+	}
 
-  &-fact {
-    &__number {
+	&-info {
+		margin-left: 440px;
+		@include media-tb {
+			margin-left: 0;
+		}
+		&__text {
+			width: 738px;
+			margin-bottom: 80px;
+			@include media-tb {
+				width: 100%;
+				margin-bottom: 64px;
+			}
+		}
+		&__lines {
+			margin-top: 0;
+			margin-bottom: 32px;
+		}
+		&__facts {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 64px 32px;
+			@include media-mb {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
 
-    }
-    &__text {
-      color: $title-white;
-      margin-top: 8px;
-    }
-  }
+	&-fact {
+		&__number {
+		}
+		&__text {
+			color: $title-white;
+			margin-top: 8px;
+		}
+	}
 }
