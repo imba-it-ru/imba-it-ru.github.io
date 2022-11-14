@@ -3,6 +3,9 @@
 	z-index: 1;
 
 	&__container {
+    @include media-tb {
+      padding-top: 0;
+    }
 	}
 	&__cards {
 		display: grid;
