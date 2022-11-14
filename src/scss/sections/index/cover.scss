@@ -5,6 +5,9 @@
 	@include media-tb {
 		height: 70vh;
 	}
+  @include media-mb {
+    height: 400px;
+  }
 
 	&__container {
 		position: relative;
@@ -28,4 +31,7 @@
 	@include media-tb {
 		opacity: 0.4;
 	}
+  @include media-mb {
+    height: 400px;
+  }
 }

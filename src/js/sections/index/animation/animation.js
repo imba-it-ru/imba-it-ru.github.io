@@ -1,7 +1,8 @@
 import gsap from 'gsap';
 import { UI } from './ui';
 
-const MAX_LENGTH = 0.15;
+
+  const MAX_LENGTH = 0.15;
 const MAX_STEP = 0.001;
 
 const WIDTH = UI.CANVAS.clientWidth;
@@ -16,7 +17,6 @@ const CENTER = {
 const TIME_KOEFF = 500;
 
 const minSize = Math.min(WIDTH, HEIGHT);
-console.log(minSize / 3);
 
 const KKK = minSize / 3;
 
@@ -45,6 +45,10 @@ const state = {
 	background: WHITE,
 };
 
+create();
+animate();
+
+
 export function setRotate(int) {
 	// index.textContent = int.toFixed(2);
 
@@ -64,8 +68,7 @@ export function setBackground(isWhite) {
 	}
 }
 
-create();
-animate();
+
 
 function create() {
 	createDots();
