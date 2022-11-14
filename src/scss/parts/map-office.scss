@@ -1,5 +1,8 @@
 .maps-tabs__map {
   filter: grayscale(1) brightness(1) invert(1);
+  .light-mode & {
+    filter: grayscale(1);
+  }
 //   position: relative;
 //   iframe {
 //      filter: invert(100%);

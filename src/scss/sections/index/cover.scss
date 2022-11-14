@@ -3,12 +3,21 @@
 	position: relative;
 
 	@include media-tb {
-		height: 70vh;
+		height: 800px;
 	}
+  @include media-mb {
+    height: 300px;
+  }
 
 	&__container {
 		position: relative;
 		z-index: 1;
+    @include media-tb {
+      padding-top: 280px;
+    }
+    @include media-mb {
+      padding-top: 100px;
+    }
 	}
 	&__title {
 		span {
@@ -27,5 +36,9 @@
 
 	@include media-tb {
 		opacity: 0.4;
+    height: 800px;
 	}
+  @include media-mb {
+    height: 300px;
+  }
 }

@@ -29,7 +29,6 @@
     }
     @include media-mb {
       row-gap: 40px;
-      margin-bottom: 40px;
     }
   }
 
@@ -44,6 +43,7 @@
     @include media-mb {
       flex-direction: column;
       row-gap: 40px;
+      margin-bottom: 0;
     }
     &-cta {
       max-width: 408px;
@@ -103,6 +103,7 @@
     }
 
     &__contact-icon {
+      
       .light-mode & {
         display: none;
       }
@@ -113,6 +114,7 @@
         display: none;
         .light-mode & {
           display: block;
+          margin-bottom: 40px;
         }
       }
     }
