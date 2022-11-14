@@ -7,9 +7,10 @@ html(lang="ru")
     link(rel="stylesheet", href="/assets/css/index.css")
   body 
     include ../sections/header.pug
-    include ../sections/index/cover.pug
-    include ../sections/index/services.pug
-    include ../sections/index/about.pug
+    div.wrapper
+      include ../sections/index/cover.pug
+      include ../sections/index/services.pug
+      include ../sections/index/about.pug
     include ../sections/partners/licenses
     include ../sections/index/tab-partners.pug
     include ../sections/index/solutions.pug
