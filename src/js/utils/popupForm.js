@@ -26,7 +26,10 @@ export class PopupWithForm extends Popup {
         super.setEventListeners();
         this._form.addEventListener('submit', evt => {
             evt.preventDefault();
-            this._onSubmit(this._getInputValues());
+            // const isGood = false;
+            // if (isGood) {
+            //   this._onSubmit(this._getInputValues());
+            // }
           });
     }      
 }

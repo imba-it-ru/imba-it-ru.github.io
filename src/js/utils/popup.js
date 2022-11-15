@@ -27,7 +27,6 @@ export class Popup {
   }
   setEventListeners () {
     this._popup.addEventListener('mousedown', (evt) => {
-      console.log(evt.target, evt.currentTarget);
         if ((evt.target.classList.contains('popup-form_visible'))||(evt.target.closest('.popup-form__close'))) {
           this.closePopup()
         }
