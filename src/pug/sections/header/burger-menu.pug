@@ -7,9 +7,9 @@
       </svg>
     .burger__col
       ul.burger__list
-        each value, index in {'О компании' : 'about', 'Партнеры' : 'partners', 'Реквизиты' : 'requisites', 'Контакты' : 'contacts'}
+        each value, index in {'О компании' : '#about', 'Партнеры' : 'partners.html', 'Реквизиты' : 'requisites.html', 'Контакты' : 'contacts.html'}
           li.h3.burger__item
-            a.burger__link(href= "/" + value + ".html")= index
+            a.burger__link(href= "/" + value)= index
       .burger__contacts
         a.h3.burger__contacts__link(href="tel:+74959693977") +7 (495) 969 39 77
         a.h3.burger__contacts__link(href="mailto:hello@imba-it.ru") hello@imba-it.ru

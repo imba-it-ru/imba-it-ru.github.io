@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg baseProfile="tiny-ps" version="1.2" width="270" height="270" viewBox="0 0 270 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <title>ИМБА ИТ</title>
+    <rect width="270" height="270" fill="#171717" />
+    <style>
+        rect {
+            fill: #171717;
+        }
+        @media (prefers-color-scheme: dark) {
+        rect { fill: none; }
+        }
+    </style>
+
+    <path d="M128.664 185H103.748V124.736L42.9215 185H29V85H53.9155V147.465L114.301 85H128.664V185Z" fill="#F05555" />
+    <path d="M241.086 103.329H204.882V185H179.967V103.329H143.765V85H241.086V103.329Z" fill="#F05555" />
+</svg>

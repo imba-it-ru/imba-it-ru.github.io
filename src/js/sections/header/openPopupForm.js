@@ -14,7 +14,6 @@ export function openform() {
 		const openPopupBtns = document.querySelectorAll('.popup-form-open');
 		openPopupBtns.forEach((btn) => {
 			btn.addEventListener('click', () => {
-        console.log(1111);
 				popupForm.openPopup();
 			});
 		});
