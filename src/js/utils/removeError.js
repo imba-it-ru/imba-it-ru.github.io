@@ -1,9 +1,10 @@
-export const removeError = () => {
+// import { input } from "./createError";
 
-  input.classList.remove('error');
+export const removeError = (input) => {
 
-  if (input.closest('label').querySelector('span.error')) {
-      input.closest('label').querySelector('span.error').remove();
-  }
+    input.classList.remove('error');
 
+    if (input.closest('label').querySelector('span.error')) {
+        input.closest('label').querySelector('span.error').remove();
+    }
 }

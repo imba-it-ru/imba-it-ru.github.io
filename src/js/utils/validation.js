@@ -1,6 +1,7 @@
 import { validateForm } from "./validateForm";
 
 export function validaton() {
+  
   const forms = document.querySelectorAll('.js_form'); // находим все формы на странице;
 
   forms.forEach(form => { // перебираем все формы на странице;
@@ -8,7 +9,7 @@ export function validaton() {
   
       e.preventDefault();
   
-      const formInputs = form.querySelectorAll('input');
+      const formInputs = form.querySelectorAll('.js_form_item');
       const formBtn = form.querySelector('.js_form_btn');
   
       formInputs.forEach(input => { // перебираем все инпуты в форме;
@@ -36,8 +37,7 @@ export function validaton() {
           if (xhr.readyState === 4) {
             if (xhr.status === 200) {
               console.log('Отправлено');
-              document.querySelector('.js_feedback').classList.remove('active');
-              document.querySelector('.js_feedback_success').classList.add('active');
+              window.location.href='/success.html';
               formBtn.classList.remove('btn-animate');
             }
           }

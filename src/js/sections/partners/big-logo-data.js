@@ -56,7 +56,7 @@ export const data = [
     imgColorWhite:'/images/partners/big-logo/color-white/logo6.svg',
     subtitle:'',
     name:'Ruseim',
-    text:''
+    text:'Российский производитель, занимающийся созданием решений в области мониторинга и управления событиями информационной безопасности на основе анализа данных в реальном времени.'
   },
 
   {

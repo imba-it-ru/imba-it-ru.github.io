@@ -9,6 +9,16 @@
     display: flex;
     flex-direction: column;
 
+    label {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+  
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
     input {
       display: block;
       width: 100%;
@@ -37,15 +47,15 @@
       display: block;
   }
   }
-  &__label {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
+  // &__label {
+  //   display: flex;
+  //   flex-direction: column;
+  //   margin-bottom: 16px;
 
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
+  //   &:last-of-type {
+  //     margin-bottom: 0;
+  //   }
+  // }
   
   // &__item {
   //   display: block;
