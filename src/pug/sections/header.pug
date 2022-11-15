@@ -1,0 +1,22 @@
+.sub-header
+header.header
+  .container.header__container
+    .header__inner
+      a(href="/").header__logo
+        <img src="images/logo.svg" alt="Лого">
+        <img src="images/logo-for-light-mode.svg" alt="Лого">
+      nav.header-menu
+        ul.header-menu__list
+          each value, index in {'О компании' : '#about', 'Партнеры' : 'partners.html', 'Контакты' : 'contacts.html'}
+            li.header-menu__item
+              a.header-menu__link.link-hover(href= "/" + value)= index
+      .header__control
+        button.button.button_style_red.header-menu__button.popup-form-open(type='button') Связаться с нами
+        button.header__btn.js_header_btn
+         <svg width="66" height="26">
+          <use xlink:href="images/sprite.svg#burger"></use>
+         </svg>
+        label.header__toggle.toggle
+          input(type="checkbox" class="js_toggle_input")
+          span
+  include ../sections/header/burger-menu.pug

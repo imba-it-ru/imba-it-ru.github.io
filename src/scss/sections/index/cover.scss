@@ -1,0 +1,44 @@
+.cover-main {
+	height: 100vh;
+	position: relative;
+
+	@include media-tb {
+		height: 800px;
+	}
+  @include media-mb {
+    height: 300px;
+  }
+
+	&__container {
+		position: relative;
+		z-index: 1;
+    @include media-tb {
+      padding-top: 280px;
+    }
+    @include media-mb {
+      padding-top: 100px;
+    }
+	}
+	&__title {
+		span {
+			color: $red;
+		}
+	}
+}
+
+.canvas {
+	pointer-events: none;
+	width: 100%;
+	height: 100vh;
+
+	position: absolute;
+	z-index: 0;
+
+	@include media-tb {
+		opacity: 0.4;
+    height: 800px;
+	}
+  @include media-mb {
+    height: 300px;
+  }
+}

@@ -10,6 +10,9 @@
   Кнопка в виде ссылки
   <button type="button" class="button button_style_link">Оставить заказ →</button>
 
+  Кнопка со стрелкой (стрелка через афтер-класс сделана!!)
+  <button type="button" class="button button_style_arrow">Оставить заявку</button>
+
 */
 
 .button {
@@ -18,40 +21,35 @@
 	justify-content: center;
 	align-items: center;
 	width: fit-content;
-	padding: 24px 40px;
+	padding: 24px 71px;
 	@extend %titles;
 	font-size: 15px;
 	line-height: 1.2;
+  text-transform: uppercase;
 	border: none;
 	cursor: pointer;
-
-	// &_portfolio {
-	// 	background-color: transparent;
-	// 	color: $grey-8e;
-	// 	border: 1px solid;
-	// 	border-color: $gold-h;
-	// 	transition: all 0.3s ease;
-	// 	&:hover {
-	// 		background-color: $gold-h;
-	// 		color: $black-1c;
-	// 	}
-
-	// 	&_active {
-	// 		background-color: $gold-h;
-	// 		color: $black-1c;
-	// 	}
-	// }
+  text-transform: uppercase;
 
 	&_style {
 		&_red {
 			background-color: $red;
 			color: $black-20;
 			transition: background-color, 0.3s ease;
+      border-radius: 50px;
+      font-weight: 600;   
+      border: 3px solid $red; 
 			&:hover {
 				background-color: transparent;
-        color:$red;
-        border: 3px solid $red;
+        // color:$red;
+        color:$title-white;
+        box-shadow: 0px 4px 8px rgba(240, 85, 85, 0.35);
+        .light-mode & {
+          color:$title-black;
+        }
 			}
+      .light-mode & {
+        color:$white-fb;
+      }
 		}
 
 		&_outlined {
@@ -61,22 +59,83 @@
 			color: $title-white;
 			transition: border-color, 0.3s ease;
       border-radius: 50px;
+      font-weight: 600;   
+
 			&:hover {
 				border: 3px solid $red;
-        filter: drop-shadow(0px 8px 16px rgba(240, 85, 85, 0.35));
+        box-shadow: 0px 4px 8px rgba(240, 85, 85, 0.35);
 			}
+      .light-mode & {
+        color:$title-black;
+      }
 		}
 		&_link {
 			background-color: transparent;
 			justify-content: flex-start;
 			align-items: flex-start;
 			text-align: left;
-			padding-left: 0;
+			// padding-left: 0;
 			color: $red;
 			transition: color, 0.3s ease;
+      font-size: 14px;
+      letter-spacing: 0.06em;
 			&:hover {
 				color: $red;
 			}
 		}
+    &_arrow {
+      color:$red;
+      text-transform: uppercase;
+      display: flex;
+      column-gap: 8px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: left;
+      justify-content: flex-start;
+      letter-spacing: 0.06em;
+      &::after {
+        content: url('../../images/arrow.svg');
+        // background-image: url('../../../images/arrow.svg');
+        display: block;
+        transition: transform 0.3s ease;
+      }
+      &:hover::after {
+				transform: translate(4px);
+			}
+    }
 	}
+  &.disabled,
+  &:disabled {
+      background-color: #883B3B;
+      border-color: #883B3B;
+      pointer-events: none;
+
+      &:hover {
+          color: #020202;
+          box-shadow: none;
+      }
+  }
+}
+
+.btn-animate {
+  animation: btn-animate 0.5s linear infinite;
+  background-size: 30px 30px;
+  background-color: $red;
+  background-image: linear-gradient( 45deg, rgba($gr, 0.5) 25%, transparent 25%, transparent 50%, rgba($gr, 0.5) 50%, rgba($gr, 0.5) 75%, transparent 75%, transparent);
+  &:hover {
+      color: #020202;
+      background-color: $red;
+      background-image: linear-gradient( 45deg, rgba($gr, 0.5) 25%, transparent 25%, transparent 50%, rgba($gr, 0.5) 50%, rgba($gr, 0.5) 75%, transparent 75%, transparent);
+      box-shadow: none;
+  }
+}
+
+@keyframes btn-animate {
+  from {
+  background-position: 0 0;
+  }
+  to {
+  background-position: 60px 30px;
+  }
 }

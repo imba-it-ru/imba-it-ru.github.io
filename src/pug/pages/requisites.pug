@@ -3,11 +3,17 @@ html(lang="ru")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Реквизиты
+    title Реквизиты ИМБА ИТ
+    meta(name="description", content="Реквизиты компании ИМБА ИТ")
+    meta(name="keywords", content="реквизиты, информация, ИМБА")
     link(rel="stylesheet", href="/assets/css/requisites.css")
+    link(rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml")
   body 
-    include ./header.pug
+    include ../sections/header.pug
     include ../sections/requisites/cover
     include ../sections/requisites/table
+    include ../sections/footer.pug
 
-  //- script(src="./src/js/pages/index.js")
+  
+  script(src="./assets/js/commonScripts.js")   
+  script(src="./assets/js/requisites.js")  

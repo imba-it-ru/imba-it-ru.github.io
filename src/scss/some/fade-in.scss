@@ -1,0 +1,9 @@
+.fade-in {
+	opacity: 0;
+	transform: scaleY(0);
+	transition: scaleY, opacity .5s ease-out;
+	&_visible {
+		opacity: 1;
+		transform: scaleY(100%);
+	}
+}

@@ -3,11 +3,20 @@ html(lang="ru")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Партнеры
+    title Партнёры ИМБА ИТ
+    meta(name="description", content="Больше 50 аккредитованных партнёров в области разработки ПО, систем безопасности, data-центров и других IT-решений")
+    meta(name="keywords", content="IT-компания, партнеры, лицензии, бизнес")
     link(rel="stylesheet", href="/assets/css/partners.css")
+    link(rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml")
   body 
-    include ./header.pug
+    include ../sections/header.pug
     include ../sections/partners/cover
     include ../sections/partners/licenses
     include ../sections/partners/big-logo
-  //- script(src="./src/js/pages/index.js")
+    include ../sections/partners/small-logo
+    include ../sections/partners/popupLogo
+    include ../sections/footer.pug
+
+  
+  script(src="./assets/js/commonScripts.js")     
+  script(src="./assets/js/partners.js")

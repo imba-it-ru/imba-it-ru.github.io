@@ -1,28 +1,41 @@
+@import "./header/burger.scss";
+
+.sub-header {
+  height: 100px;
+  @include media-mb {
+    height: 80px;
+  }
+}
+
 .header {
-  // position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
-  // z-index: 20;
-  width: 1288px;
-  background-color: #202020;
+  z-index: 20;
+  width: 100%;
+  // max-width: 1288px;
+  background-color: $black-20;
   margin: 0 auto;
   padding: 0 6px;
+  &__container {
+    padding: 0 6px;
+  }
 
   &__inner {
       display: flex;
       align-items: center;
-      height: 80px;
-      @media (min-width: 769px) {
-          height: 100px;
+      height: 100px;
+      @include media-mb {
+        height: 80px;
       }
   }
 
   &__logo {
-      margin-right: 40px;
+      margin-right: 70px;
       img {
-          max-width: 145px;
-          @media (min-width: 769px) {
-              max-width: none;
+          max-width: 260px;
+          @include media-mb {
+              max-width: 145px;
           }
           &:nth-child(2) {
               display: none;
@@ -32,29 +45,34 @@
   }
 
   &-menu {
-      display: none;
-      @media (min-width: 1240px) {
-          display: block;
-      }
+      display: block;
       &__list {
           display: flex;
           align-items: center;
+          column-gap: 40px;
+          @include media-tb {
+            display: none;
+          };
       }
       &__item {
-          &:not(:last-child) {
-              margin-right: 40px;
-          }
-          &:last-child {
-              margin-left: 40px;
-          }
+        
       }
       &__link {
           @include mo;
           font-weight: 500;
           font-size: 14px;
           line-height: 160%;
-          color: #ECECEC;
+          color: $title-white;
           text-transform: uppercase;
+          .light-mode & {
+            color: $title-black;
+          }
+      }
+      &__button {
+        padding: 17px 29px;
+        @include media-tb {
+          display: none;
+        }
       }
   }
 
@@ -62,6 +80,7 @@
       display: flex;
       align-items: center;
       margin-left: auto;
+      column-gap: 32px;
   }
 
   &__btn {
@@ -71,15 +90,14 @@
       width: 78px;
       height: 40px;
       svg {
-          stroke:#ECECEC;
+          stroke:$title-white;
       }
   }
 
   &__toggle {
-      display: none;
-      margin-left: 32px;
-      @media (min-width: 1240px) {
-          display: block;
+      display: block;
+      @include media-ts {
+          display: none;
       }
   }
 }

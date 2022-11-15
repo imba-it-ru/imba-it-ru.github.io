@@ -1,9 +1,20 @@
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-    body 
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Контакты ИМБА IT
+    meta(name="description", content="Офисы и склады IT компании ИМБА ИТ. Наш телефон -> +7 (495) 969 39 77. Почта -> hello@imba-it.ru")
+    meta(name="keywords", content="контакты, ИМБА ИТ")
+    link(rel="stylesheet", href="/assets/css/contacts.css")
+    link(rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml")
+  body 
+    include ../sections/header.pug
+    include ../sections/contacts/cover
+    include ../sections/contacts/cta-contacts
+    include ../sections/contacts/maps-contacts
+    include ../sections/contacts/link-requisites
+    include ../sections/footer.pug
 
-    
+  script(src="./assets/js/commonScripts.js")   
+  script(src="./assets/js/contacts.js")

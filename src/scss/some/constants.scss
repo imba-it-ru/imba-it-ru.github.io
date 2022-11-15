@@ -1,9 +1,19 @@
 $red: #F05555;
+$red-opacity: #f05555be;
+$line-red:#F055554D;
+$red-dark:#883B3B;
+
 $title-white: #ECECEC;
 $text-white: #ADADAD;
+$text-black: #242424;
+$title-black: #020202;
 $gr: #fff;
 
 $black-20: #202020;
+$black-17: #171717;
+$white-fb: #FBFBFB;   
+ 
+
 
 @mixin mo() {
     font-family: 'Montserrat', sans-serif;
@@ -14,4 +24,10 @@ $black-20: #202020;
   width: 80px;
   height: 2px;
   background-color: $red;
+  @include media-ts {
+    margin-top: 32px;
+  }
+  @include media-mb {
+    margin-top: 24px;
+  }
 }
