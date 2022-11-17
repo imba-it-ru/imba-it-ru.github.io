@@ -5,8 +5,8 @@ import { UI } from './animation/ui.js';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const OPACITY_MAX = 0.4;
-const OPACITY_MIN = 0.15;
+const OPACITY_MAX = 0.8;
+const OPACITY_MIN = 0.3;
 
 const X_TRANSFORM_START = '20vw';
 const X_TRANSFORM_FINISH = '-50vw';

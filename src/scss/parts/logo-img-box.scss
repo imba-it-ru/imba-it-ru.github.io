@@ -1,0 +1,50 @@
+.logo-img-box {
+	&__color-light {
+		display: block;
+		opacity: 0;
+		.light-mode & {
+			display: none;
+		}
+	}
+
+	&:hover &__color-light {
+		opacity: 1;
+	}
+
+	&__grey-light {
+		display: block;
+		opacity: 1;
+
+		.light-mode & {
+			display: none;
+		}
+	}
+
+	&:hover &__grey-light {
+		opacity: 0;
+	}
+
+	&__grey-dark {
+		display: none;
+		opacity: 1;
+		.light-mode & {
+			display: block;
+		}
+	}
+
+	&:hover &__grey-dark {
+		opacity: 0;
+	}
+
+	&__color-dark {
+		display: none;
+		opacity: 0;
+		.light-mode & {
+			display: block;
+		}
+	}
+
+	&:hover &__color-dark {
+		opacity: 1;
+	}
+}
