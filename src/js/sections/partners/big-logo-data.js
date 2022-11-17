@@ -1,9 +1,9 @@
 export const data = [
   {
-    imgWhite:'/images/partners/big-logo/white/logo1.svg',
-    imgColor:'/images/partners/big-logo/color/logo1.svg',
-    imgBlack:'/images/partners/big-logo/black/logo1.svg',
-    imgColorWhite:'/images/partners/big-logo/color-white/logo1.svg',
+    imgWhite:'/images/partners/big-logo/white/logo1.png',
+    imgColor:'/images/partners/big-logo/color/logo1.png',
+    imgBlack:'/images/partners/big-logo/black/logo1.png',
+    imgColorWhite:'/images/partners/big-logo/color-white/logo1.png',
     subtitle:'',
     name:'Код безопасности',
     text:'Российский разработчик программных и аппаратных средств, обеспечивающих полную защиту ИТ-инфраструктуры: конечных станций и серверов, периметра сети, современных виртуальных инфраструктур и мобильных устройств.'
@@ -20,20 +20,20 @@ export const data = [
   },
 
   {
-    imgWhite:'/images/partners/big-logo/white/logo3.svg',
-    imgColor:'/images/partners/big-logo/color/logo3.svg',
-    imgBlack:'/images/partners/big-logo/black/logo3.svg',
-    imgColorWhite:'/images/partners/big-logo/color-white/logo3.svg',
+    imgWhite:'/images/partners/big-logo/white/logo3.png',
+    imgColor:'/images/partners/big-logo/color/logo3.png',
+    imgBlack:'/images/partners/big-logo/black/logo3.png',
+    imgColorWhite:'/images/partners/big-logo/color-white/logo3.png',
     subtitle:'Registered Partner',
     name:'Лаборатория Касперского',
     text:'Российский разработчик и производитель систем защиты от компьютерных вирусов, спама, хакерских атак и прочих киберугроз.'
   },
 
   {
-    imgWhite:'/images/partners/big-logo/white/logo4.svg',
-    imgColor:'/images/partners/big-logo/color/logo4.svg',
-    imgBlack:'/images/partners/big-logo/black/logo4.svg',
-    imgColorWhite:'/images/partners/big-logo/color-white/logo4.svg',
+    imgWhite:'/images/partners/big-logo/white/logo4.png',
+    imgColor:'/images/partners/big-logo/color/logo4.png',
+    imgBlack:'/images/partners/big-logo/black/logo4.png',
+    imgColorWhite:'/images/partners/big-logo/color-white/logo4.png',
     subtitle:'Partner',
     name:'Check Point',
     text:'Израильский разработчик решений по кибербезопасности.'
@@ -50,10 +50,10 @@ export const data = [
   },
 
   {
-    imgWhite:'/images/partners/big-logo/white/logo6.svg',
-    imgColor:'/images/partners/big-logo/color/logo6.svg',
-    imgBlack:'/images/partners/big-logo/black/logo6.svg',
-    imgColorWhite:'/images/partners/big-logo/color-white/logo6.svg',
+    imgWhite:'/images/partners/big-logo/white/logo6.png',
+    imgColor:'/images/partners/big-logo/color/logo6.png',
+    imgBlack:'/images/partners/big-logo/black/logo6.png',
+    imgColorWhite:'/images/partners/big-logo/color-white/logo6.png',
     subtitle:'',
     name:'Ruseim',
     text:'Российский производитель, занимающийся созданием решений в области мониторинга и управления событиями информационной безопасности на основе анализа данных в реальном времени.'
@@ -70,30 +70,30 @@ export const data = [
   },
 
   {
-    imgWhite:'/images/partners/big-logo/white/logo8.svg',
-    imgColor:'/images/partners/big-logo/color/logo8.svg',
-    imgBlack:'/images/partners/big-logo/black/logo8.svg',
-    imgColorWhite:'/images/partners/big-logo/color-white/logo8.svg',
+    imgWhite:'/images/partners/big-logo/white/logo8.png',
+    imgColor:'/images/partners/big-logo/color/logo8.png',
+    imgBlack:'/images/partners/big-logo/black/logo8.png',
+    imgColorWhite:'/images/partners/big-logo/color-white/logo8.png',
     subtitle:'Бизнес-партнер',
     name:'Utinet',
     text:'Российский роизводитель серверов, систем хранения данных и программного обеспечения.'
   },
 
   {
-    imgWhite:'/images/partners/big-logo/white/logo9.svg',
-    imgColor:'/images/partners/big-logo/color/logo9.svg',
-    imgBlack:'/images/partners/big-logo/black/logo9.svg',
-    imgColorWhite:'/images/partners/big-logo/color-white/logo9.svg',
+    imgWhite:'/images/partners/big-logo/white/logo9.png',
+    imgColor:'/images/partners/big-logo/color/logo9.png',
+    imgBlack:'/images/partners/big-logo/black/logo9.png',
+    imgColorWhite:'/images/partners/big-logo/color-white/logo9.png',
     subtitle:'Авторизованный партнер',
     name:'Аэродиск',
     text:'Российский производитель инновационных решений в области хранения данных и виртуализации (системы хранения данных, гиперконвергентная система и программное обеспечение).'
   },
 
   {
-    imgWhite:'/images/partners/big-logo/white/logo10.svg',
-    imgColor:'/images/partners/big-logo/color/logo10.svg',
-    imgBlack:'/images/partners/big-logo/black/logo10.svg',
-    imgColorWhite:'/images/partners/big-logo/color-white/logo10.svg',
+    imgWhite:'/images/partners/big-logo/white/logo10.png',
+    imgColor:'/images/partners/big-logo/color/logo10.png',
+    imgBlack:'/images/partners/big-logo/black/logo10.png',
+    imgColorWhite:'/images/partners/big-logo/color-white/logo10.png',
     subtitle:'Авторизованный партнер',
     name:'Звезда',
     text:'Российский разработчик и производитель вычислительного радиоэлектронного оборудования и ПО (вычислительные серверы, программно-определяемые системы хранения данных, автоматизированные рабочие места и тонкие клиенты). телекоммуникационное оборудование)'
@@ -110,10 +110,10 @@ export const data = [
   },
 
   {
-    imgWhite:'/images/partners/big-logo/white/logo12.svg',
-    imgColor:'/images/partners/big-logo/color/logo12.svg',
-    imgBlack:'/images/partners/big-logo/black/logo12.svg',
-    imgColorWhite:'/images/partners/big-logo/color-white/logo12.svg',
+    imgWhite:'/images/partners/big-logo/white/logo12.png',
+    imgColor:'/images/partners/big-logo/color/logo12.png',
+    imgBlack:'/images/partners/big-logo/black/logo12.png',
+    imgColorWhite:'/images/partners/big-logo/color-white/logo12.png',
     subtitle:'Авторизованный партнер',
     name:'Р7-Офис',
     text:'Российский разработчик офисного программного обеспечения.'

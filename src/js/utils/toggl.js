@@ -4,23 +4,23 @@ import { setBackground as setCanvasBackground } from '../sections/index/animatio
 export const toggleInputs = document.querySelectorAll('.js_toggle_input'); // чекбоксы,переключающие тему (в хедере и мобильном меню);
 
 export function createDarkWhiteMode() {
-	if (localStorage.getItem('theme') === 'light') {
+	if (localStorage.getItem('theme') === 'dark') {
+		toggleInputs.forEach((input) => {
+			input.checked = false;
+		});
+		setDarkMode();
+		
+	} else {
 		toggleInputs.forEach((input) => {
 			input.checked = true;
 		});
 
-		setLightMode();
-	} else {
-		toggleInputs.forEach((input) => {
-			input.checked = false;
-		});
 
-		setDarkMode();
+    setLightMode();
 	}
 
 	toggleInputs.forEach((input) => {
 		input.addEventListener('change', () => {
-			console.log('абобааа');
 			if (input.checked) {
 				toggleInputs.forEach((input) => {
 					input.checked = true;
