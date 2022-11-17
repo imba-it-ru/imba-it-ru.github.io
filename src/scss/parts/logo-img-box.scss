@@ -13,6 +13,7 @@
 
 	&__grey-light {
 		display: block;
+		opacity: 1;
 
 		.light-mode & {
 			display: none;
@@ -23,7 +24,20 @@
 		opacity: 0;
 	}
 
+	&__grey-dark {
+		display: none;
+		opacity: 1;
+		.light-mode & {
+			display: block;
+		}
+	}
+
+	&:hover &__grey-dark {
+		opacity: 0;
+	}
+
 	&__color-dark {
+		display: none;
 		opacity: 0;
 		.light-mode & {
 			display: block;
@@ -32,16 +46,5 @@
 
 	&:hover &__color-dark {
 		opacity: 1;
-	}
-
-	&__grey-dark {
-		display: none;
-		.light-mode & {
-			display: block;
-		}
-	}
-
-	&:hover &__grey-dark {
-		opacity: 0;
 	}
 }

@@ -1,3 +1,5 @@
+@import '../../parts/logo-img-box.scss';
+
 .big-logo {
 	&__container {
 		padding-bottom: 80px;
@@ -32,52 +34,52 @@
 		&-white {
 			width: 100%;
 			transition: all 0.3s ease 0s;
-			&:hover {
-				opacity: 0;
-			}
-			.light-mode & {
-				display: none;
-			}
+			// &:hover {
+			// 	opacity: 0;
+			// }
+			// .light-mode & {
+			// 	display: none;
+			// }
 		}
 		&-black {
 			width: 100%;
 			transition: all 0.3s ease 0s;
-			display: none;
-			&:hover {
-				opacity: 0;
-			}
-			.light-mode & {
-				display: block;
-			}
+			// display: none;
+			// &:hover {
+			// 	opacity: 0;
+			// }
+			// .light-mode & {
+			// 	display: block;
+			// }
 		}
 		&-color {
 			width: 100%;
 			position: absolute;
 			top: 0;
 			left: 0;
-			opacity: 0;
+			// opacity: 0;
 			transition: all 0.3s ease 0s;
-			&:hover {
-				opacity: 100%;
-			}
-			.light-mode & {
-				display: none;
-			}
+			// &:hover {
+			// 	opacity: 100%;
+			// }
+			// .light-mode & {
+			// 	display: none;
+			// }
 		}
 		&-color-white {
 			position: absolute;
 			top: 0;
 			left: 0;
-			opacity: 0;
+			// opacity: 0;
 			width: 100%;
 			transition: all 0.3s ease 0s;
-			display: none;
-			&:hover {
-				opacity: 100%;
-			}
-			.light-mode & {
-				display: block;
-			}
+			// display: none;
+			// &:hover {
+			// 	opacity: 100%;
+			// }
+			// .light-mode & {
+			// 	display: block;
+			// }
 		}
 	}
 

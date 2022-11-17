@@ -13,13 +13,26 @@ export function makeBigLogo() {
 
 function createBox(obj) {
 	const button = createButton('big-logo__btn');
-	const imgBox = createDivBox('big-logo__img-box');
-	const imgWhite = createImg(obj.imgWhite, 'big-logo__img-white');
-	const imgBlack = createImg(obj.imgBlack, 'big-logo__img-black');
-	const imgColor = createImg(obj.imgColor, 'big-logo__img-color');
+	const imgBox = createDivBox('big-logo__img-box', 'logo-img-box');
+	const imgWhite = createImg(
+		obj.imgWhite,
+		'big-logo__img-white',
+		'logo-img-box__grey-light'
+	);
+	const imgBlack = createImg(
+		obj.imgBlack,
+		'big-logo__img-black',
+		'logo-img-box__grey-dark'
+	);
+	const imgColor = createImg(
+		obj.imgColor,
+		'big-logo__img-color',
+		'logo-img-box__color-light'
+	);
 	const imgColorWhite = createImg(
 		obj.imgColorWhite,
-		'big-logo__img-color-white'
+		'big-logo__img-color-white',
+		'logo-img-box__color-dark'
 	);
 	const textBox = createDivBox('big-logo__text-box');
 	const marker = createDivBox('big-logo__marker');
