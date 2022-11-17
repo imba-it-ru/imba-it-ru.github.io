@@ -1,106 +1,105 @@
 .big-logo {
+	&__container {
+		padding-bottom: 80px;
+	}
+	&__line {
+		width: 100%;
+		height: 1px;
+		background-color: $red;
+		margin-bottom: 24px;
+	}
 
-  &__container {
-    padding-bottom: 80px;
-  }
-  &__line {
-    width: 100%;
-    height: 1px;
-    background-color: $red;
-    margin-bottom: 24px;
-  }
+	&__content-logo {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		@include media-mb {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
 
-  &__content-logo {
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    @include media-mb {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-direction: column;
+	}
 
-  &__btn {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
+	&__img {
+		&-box {
+			position: relative;
+			width: 100%;
+		}
+		&-white {
+			width: 100%;
+			transition: all 0.3s ease 0s;
+			&:hover {
+				opacity: 0;
+			}
+			.light-mode & {
+				display: none;
+			}
+		}
+		&-black {
+			width: 100%;
+			transition: all 0.3s ease 0s;
+			display: none;
+			&:hover {
+				opacity: 0;
+			}
+			.light-mode & {
+				display: block;
+			}
+		}
+		&-color {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			transition: all 0.3s ease 0s;
+			&:hover {
+				opacity: 100%;
+			}
+			.light-mode & {
+				display: none;
+			}
+		}
+		&-color-white {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			width: 100%;
+			transition: all 0.3s ease 0s;
+			display: none;
+			&:hover {
+				opacity: 100%;
+			}
+			.light-mode & {
+				display: block;
+			}
+		}
+	}
 
-  &__img {
-    &-box {
-    position: relative;
-    width: 100%;
-  }
-    &-white {
-      width: 100%;
-      transition: all 0.3s ease 0s;
-      &:hover {
-        opacity: 0;
-      }
-      .light-mode & {
-        display: none;
-      }
-    }
-    &-black {
-      width: 100%;
-      transition: all 0.3s ease 0s;
-      display: none;
-      &:hover {
-        opacity: 0;
-      }
-      .light-mode & {
-        display: block;
-      }
-    }
-    &-color {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: all 0.3s ease 0s;
-      &:hover {
-        opacity: 100%;
-      }
-      .light-mode & {
-        display: none;
-      }
-    }
-    &-color-white {
-      position: absolute;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      width: 100%;
-      transition: all 0.3s ease 0s;
-      display: none;
-      &:hover {
-        opacity: 100%;
-      }
-      .light-mode & {
-        display: block;
-      }
-    }
-  }
+	&__text-box {
+		display: flex;
+		column-gap: 8px;
+		align-items: center;
+		margin-top: -26px;
+		@include media-ts {
+			margin-top: 0;
+		}
+	}
 
-  &__text-box {
-    display: flex;
-    column-gap: 8px;
-    align-items: center;
-    margin-top: -26px;
-    @include media-ts {
-      margin-top: 0;
-    }
-  }
+	&__marker {
+		width: 4px;
+		height: 4px;
+		background-color: $red;
+		border-radius: 50%;
+		flex-shrink: 0;
+	}
 
-  &__marker {
-    width: 4px;
-    height: 4px;
-    background-color: $red;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-
-  &__logo-text {
-    text-align: left;
-  }
+	&__logo-text {
+		text-align: left;
+	}
 }

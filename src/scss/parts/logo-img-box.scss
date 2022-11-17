@@ -1,0 +1,47 @@
+.logo-img-box {
+	&__color-light {
+		display: block;
+		opacity: 0;
+		.light-mode & {
+			display: none;
+		}
+	}
+
+	&:hover &__color-light {
+		opacity: 1;
+	}
+
+	&__grey-light {
+		display: block;
+
+		.light-mode & {
+			display: none;
+		}
+	}
+
+	&:hover &__grey-light {
+		opacity: 0;
+	}
+
+	&__color-dark {
+		opacity: 0;
+		.light-mode & {
+			display: block;
+		}
+	}
+
+	&:hover &__color-dark {
+		opacity: 1;
+	}
+
+	&__grey-dark {
+		display: none;
+		.light-mode & {
+			display: block;
+		}
+	}
+
+	&:hover &__grey-dark {
+		opacity: 0;
+	}
+}
