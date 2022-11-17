@@ -1,29 +1,29 @@
 export const dataSmall = [
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo1.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo1.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo1.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo1.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo1.png',
+    imgColor:'/images/partners/small-logo/color/small-logo1.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo1.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo1.png',
     subtitle:'Авторизованный партнер',
     name:'Киберпротект',
     text:'Российский разработчик ПО для защиты данных, резервного копирования и восстановления виртуальных, физических и облачных сред.'
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo2.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo2.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo2.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo2.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo2.png',
+    imgColor:'/images/partners/small-logo/color/small-logo2.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo2.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo2.png',
     subtitle:'Авторизованный партнер',
     name:'Qtech',
     text:'Российский разработчик и производитель сетевого, телекоммуникационного и IT-оборудования для операторов связи, государственных структур и корпоративных сетей.'
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo3.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo3.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo3.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo3.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo3.png',
+    imgColor:'/images/partners/small-logo/color/small-logo3.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo3.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo3.png',
     subtitle:'Авторизованный партнер',
     name:'Автограф',
     text:'Российский разработчик программного обеспечения, нормативных документов, аппаратно-программных комплексов в различных отраслях промышленности и транспорта городского, железнодорожного, метрополитена (графический редактор Автограф для инженерной и деловой векторной графики).'
@@ -60,10 +60,10 @@ export const dataSmall = [
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo7.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo7.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo7.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo7.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo7.png',
+    imgColor:'/images/partners/small-logo/color/small-logo7.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo7.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo7.png',
     subtitle:'Авторизованный партнер',
     name:'DCN (Digital China Group Co., Ltd.)',
     text:'Китайский производитель коммутаторов, устройств беспроводной сети (точки доступа), маршрутизаторов, брандмауэров и шлюзов безопасности, систем хранения данных, CPE и облачных сервисов.'
@@ -90,10 +90,10 @@ export const dataSmall = [
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo10.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo10.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo10.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo10.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo10.png',
+    imgColor:'/images/partners/small-logo/color/small-logo10.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo10.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo10.png',
     subtitle:'Авторизованный партнер',
     name:'Eurolan',
     text:'Российский производитель оборудования для построения структурированных кабельных систем.'
@@ -120,10 +120,10 @@ export const dataSmall = [
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo13.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo13.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo13.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo13.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo13.png',
+    imgColor:'/images/partners/small-logo/color/small-logo13.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo13.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo13.png',
     subtitle:'Авторизованный партнер',
     name:'MIND',
     text:'Российский разработчик решений в области видеоконференцсвязи.'
@@ -170,20 +170,20 @@ export const dataSmall = [
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo18.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo18.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo18.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo18.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo18.png',
+    imgColor:'/images/partners/small-logo/color/small-logo18.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo18.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo18.png',
     subtitle:'Certified Partner',
     name:'H3C',
     text:'Китайский производитель серверов, хранилищ, сетевого оборудования, гиперконвергентных систем и систем управления ИТ.'
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo19.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo19.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo19.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo19.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo19.png',
+    imgColor:'/images/partners/small-logo/color/small-logo19.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo19.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo19.png',
     subtitle:'Gold Partner',
     name:'GoodWAN',
     text:'Российский разработчик и производитель оборудования для интернета вещей.'
@@ -200,10 +200,10 @@ export const dataSmall = [
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo21.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo21.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo21.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo21.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo21.png',
+    imgColor:'/images/partners/small-logo/color/small-logo21.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo21.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo21.png',
     subtitle:'Партнер',
     name:'RAIDIX',
     text:'Российский разработчик ПО для управления высокопроизводительными системами хранения данных.'
@@ -220,20 +220,20 @@ export const dataSmall = [
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo23.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo23.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo23.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo23.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo23.png',
+    imgColor:'/images/partners/small-logo/color/small-logo23.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo23.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo23.png',
     subtitle:'',
     name:'Maipu Communication Technology',
     text:'Китайский производитель сетевого обрудования: маршрутизаторов, коммутаторов, VoIP-коммуникаций.'
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo24.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo24.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo24.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo24.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo24.png',
+    imgColor:'/images/partners/small-logo/color/small-logo24.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo24.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo24.png',
     subtitle:'',
     name:'Infotecs',
     text:'Российский разработчик сертифицированного ПО в сфере информационной безопасности.'
@@ -250,20 +250,20 @@ export const dataSmall = [
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo26.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo26.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo26.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo26.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo26.png',
+    imgColor:'/images/partners/small-logo/color/small-logo26.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo26.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo26.png',
     subtitle:'',
     name:'Initi',
     text:'Российский разработчик ПО для мониторинга ИТ-инфраструктуры и сервисов.'
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo27.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo27.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo27.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo27.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo27.png',
+    imgColor:'/images/partners/small-logo/color/small-logo27.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo27.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo27.png',
     subtitle:'',
     name:'Infinidat',
     text:'Израильский производитель систем хранения данных корпоративного класса нового поколения, решений для хранения и организации сверхбольших массивов данных.'
@@ -280,10 +280,10 @@ export const dataSmall = [
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo29.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo29.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo29.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo29.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo29.png',
+    imgColor:'/images/partners/small-logo/color/small-logo29.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo29.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo29.png',
     subtitle:'',
     name:'Baum',
     text:'Российский производитель высокопроизводительных, защищенных систем хранения данных большой ёмкости.'
@@ -320,20 +320,20 @@ export const dataSmall = [
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo33.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo33.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo33.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo33.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo33.png',
+    imgColor:'/images/partners/small-logo/color/small-logo33.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo33.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo33.png',
     subtitle:'',
     name:'IEK',
     text:'Российская производитель электротехнического и светотехнического оборудования, продукции для телекоммуникаций и оборудования промышленной автоматизации.'
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo34.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo34.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo34.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo34.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo34.png',
+    imgColor:'/images/partners/small-logo/color/small-logo34.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo34.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo34.png',
     subtitle:'',
     name:'intellect',
     text:'Российский разработчик программного обеспечения для систем безопасности и видеонаблюдения.'
@@ -380,20 +380,20 @@ export const dataSmall = [
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo39.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo39.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo39.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo39.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo39.png',
+    imgColor:'/images/partners/small-logo/color/small-logo39.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo39.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo39.png',
     subtitle:'',
     name:'RusGuard',
     text:'Российский производитель системы контроля и управления доступом.'
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo40.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo40.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo40.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo40.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo40.png',
+    imgColor:'/images/partners/small-logo/color/small-logo40.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo40.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo40.png',
     subtitle:'',
     name:'Segnetics',
     text:'Российский разработчик и производитель промышленных контроллеров.'
@@ -420,60 +420,60 @@ export const dataSmall = [
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo43.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo43.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo43.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo43.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo43.png',
+    imgColor:'/images/partners/small-logo/color/small-logo43.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo43.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo43.png',
     subtitle:'',
     name:'TVT',
     text:'Китайский производитель оборудования для видеонаблюдения.'
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo44.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo44.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo44.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo44.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo44.png',
+    imgColor:'/images/partners/small-logo/color/small-logo44.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo44.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo44.png',
     subtitle:'',
     name:'Vybos',
     text:'Российский разработчик комплексных технических решений по созданию доступной, отказоустойчивой информационной инфраcтруктуры в ЦОД'
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo45.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo45.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo45.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo45.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo45.png',
+    imgColor:'/images/partners/small-logo/color/small-logo45.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo45.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo45.png',
     subtitle:'',
     name:'Веза',
     text:'Российский производитель полного технологического цикла вентиляционного и климатического оборудования.'
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo46.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo46.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo46.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo46.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo46.png',
+    imgColor:'/images/partners/small-logo/color/small-logo46.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo46.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo46.png',
     subtitle:'',
     name:'ГК Штиль',
     text:'Российский производитель систем электропитания (инверторные стабилизаторы напряжения, источники бесперебойного питания переменного и постоянного тока, инверторы и инверторные системы, установки электропитания постоянного тока, климатические шкафы).'
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo47.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo47.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo47.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo47.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo47.png',
+    imgColor:'/images/partners/small-logo/color/small-logo47.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo47.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo47.png',
     subtitle:'',
     name:'КАМА-Энергетика',
     text:'Российский производитель газопоршневых и дизельных электростанций и силовых установок.'
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo48.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo48.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo48.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo48.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo48.png',
+    imgColor:'/images/partners/small-logo/color/small-logo48.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo48.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo48.png',
     subtitle:'',
     name:'НПП ЗЕВС',
     text:'Российский производитель систем кондиционирования воздуха.'
@@ -490,10 +490,10 @@ export const dataSmall = [
   },
 
   {
-    imgWhite:'/images/partners/small-logo/white/small-logo50.svg',
-    imgColor:'/images/partners/small-logo/color/small-logo50.svg',
-    imgBlack:'/images/partners/small-logo/black/small-logo50.svg',
-    imgColorWhite:'/images/partners/small-logo/color-white/small-logo50.svg',
+    imgWhite:'/images/partners/small-logo/white/small-logo50.png',
+    imgColor:'/images/partners/small-logo/color/small-logo50.png',
+    imgBlack:'/images/partners/small-logo/black/small-logo50.png',
+    imgColorWhite:'/images/partners/small-logo/color-white/small-logo50.png',
     subtitle:'',
     name:'РУСЭЛТ',
     text:'Российское производитель промышленного электротехнического оборудования.'
