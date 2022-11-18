@@ -7,7 +7,7 @@ const TIMING = 1000;
 
 const options = {
 	root: null,
-	rootMargin: '-10% 0px',
+	rootMargin: '-20px 0px',
 	threshold: 0,
 };
 

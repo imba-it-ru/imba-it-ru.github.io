@@ -49,72 +49,72 @@ export const dataClients = [
   },
 
   {
-    imgWhite:'/images/clients/white/logo8.svg',
-    imgColor:'/images/clients/color/logo8.svg',
-    imgBlack:'/images/clients/black/logo8.svg',
-    imgColorWhite:'/images/clients/color-white/logo8.svg'
+    imgWhite:'/images/clients/white/logo8.png',
+    imgColor:'/images/clients/color/logo8.png',
+    imgBlack:'/images/clients/black/logo8.png',
+    imgColorWhite:'/images/clients/color-white/logo8.png'
   },
 
   {
-    imgWhite:'/images/clients/white/logo9.svg',
-    imgColor:'/images/clients/color/logo9.svg',
-    imgBlack:'/images/clients/black/logo9.svg',
-    imgColorWhite:'/images/clients/color-white/logo9.svg'
+    imgWhite:'/images/clients/white/logo9.png',
+    imgColor:'/images/clients/color/logo9.png',
+    imgBlack:'/images/clients/black/logo9.png',
+    imgColorWhite:'/images/clients/color-white/logo9.png'
   },
 
   {
-    imgWhite:'/images/clients/white/logo10.svg',
-    imgColor:'/images/clients/color/logo10.svg',
-    imgBlack:'/images/clients/black/logo10.svg',
-    imgColorWhite:'/images/clients/color-white/logo10.svg'
+    imgWhite:'/images/clients/white/logo10.png',
+    imgColor:'/images/clients/color/logo10.png',
+    imgBlack:'/images/clients/black/logo10.png',
+    imgColorWhite:'/images/clients/color-white/logo10.png'
   },
 
   {
-    imgWhite:'/images/clients/white/logo11.svg',
-    imgColor:'/images/clients/color/logo11.svg',
-    imgBlack:'/images/clients/black/logo11.svg',
-    imgColorWhite:'/images/clients/color-white/logo11.svg'
+    imgWhite:'/images/clients/white/logo11.png',
+    imgColor:'/images/clients/color/logo11.png',
+    imgBlack:'/images/clients/black/logo11.png',
+    imgColorWhite:'/images/clients/color-white/logo11.png'
   },
 
   {
-    imgWhite:'/images/clients/white/logo12.svg',
-    imgColor:'/images/clients/color/logo12.svg',
-    imgBlack:'/images/clients/black/logo12.svg',
-    imgColorWhite:'/images/clients/color-white/logo12.svg'
+    imgWhite:'/images/clients/white/logo12.png',
+    imgColor:'/images/clients/color/logo12.png',
+    imgBlack:'/images/clients/black/logo12.png',
+    imgColorWhite:'/images/clients/color-white/logo12.png'
   },
 
   {
-    imgWhite:'/images/clients/white/logo13.svg',
-    imgColor:'/images/clients/color/logo13.svg',
-    imgBlack:'/images/clients/black/logo13.svg',
-    imgColorWhite:'/images/clients/color-white/logo13.svg'
+    imgWhite:'/images/clients/white/logo13.png',
+    imgColor:'/images/clients/color/logo13.png',
+    imgBlack:'/images/clients/black/logo13.png',
+    imgColorWhite:'/images/clients/color-white/logo13.png'
   },
 
   {
-    imgWhite:'/images/clients/white/logo14.svg',
-    imgColor:'/images/clients/color/logo14.svg',
-    imgBlack:'/images/clients/black/logo14.svg',
-    imgColorWhite:'/images/clients/color-white/logo14.svg'
+    imgWhite:'/images/clients/white/logo14.png',
+    imgColor:'/images/clients/color/logo14.png',
+    imgBlack:'/images/clients/black/logo14.png',
+    imgColorWhite:'/images/clients/color-white/logo14.png'
   },
 
   {
-    imgWhite:'/images/clients/white/logo15.svg',
-    imgColor:'/images/clients/color/logo15.svg',
-    imgBlack:'/images/clients/black/logo15.svg',
-    imgColorWhite:'/images/clients/color-white/logo15.svg'
+    imgWhite:'/images/clients/white/logo15.png',
+    imgColor:'/images/clients/color/logo15.png',
+    imgBlack:'/images/clients/black/logo15.png',
+    imgColorWhite:'/images/clients/color-white/logo15.png'
   },
 
   {
-    imgWhite:'/images/clients/white/logo16.svg',
-    imgColor:'/images/clients/color/logo16.svg',
-    imgBlack:'/images/clients/black/logo16.svg',
-    imgColorWhite:'/images/clients/color-white/logo16.svg'
+    imgWhite:'/images/clients/white/logo16.png',
+    imgColor:'/images/clients/color/logo16.png',
+    imgBlack:'/images/clients/black/logo16.png',
+    imgColorWhite:'/images/clients/color-white/logo16.png'
   },
 
   {
-    imgWhite:'/images/clients/white/logo17.svg',
-    imgColor:'/images/clients/color/logo17.svg',
-    imgBlack:'/images/clients/black/logo17.svg',
-    imgColorWhite:'/images/clients/color-white/logo17.svg'
+    imgWhite:'/images/clients/white/logo17.png',
+    imgColor:'/images/clients/color/logo17.png',
+    imgBlack:'/images/clients/black/logo17.png',
+    imgColorWhite:'/images/clients/color-white/logo17.png'
   },
 ]

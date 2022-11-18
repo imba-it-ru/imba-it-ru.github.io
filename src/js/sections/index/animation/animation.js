@@ -2,7 +2,7 @@ import gsap from 'gsap';
 import { UI } from './ui';
 
 const MAX_LENGTH = 0.15;
-const MAX_STEP = 0.001;
+const MAX_STEP = 0.003;
 
 const DISTANCE = 20;
 const RADIUS = 1;
@@ -11,7 +11,7 @@ const CENTER = {
 	Y: 0,
 	Z: DISTANCE,
 };
-const TIME_KOEFF = 500;
+const TIME_KOEFF = 1000;
 
 const COORDS = {
 	A: {
@@ -28,7 +28,16 @@ const COORDS = {
 const BLACK = '#202020';
 const WHITE = '#FBFBFB';
 
+const BLACK_COLOR_FILL = '#A42E2C';
+const BLACK_COLOR_STROKE = '#670E0E';
+
+const WHITE_COLOR_FILL = '#511112';
+const WHITE_COLOR_STROKE = '#340D0F';
+
 const AMOUNT = 500;
+
+// state.ctx.fillStyle = state.colorFill;//'#A42E2C'
+// state.ctx.strokeStyle = state.colorStroke; //'#670E0E';
 
 const state = {
 	rotation: 0,
@@ -39,17 +48,16 @@ const state = {
 	KKK: 0,
 	WIDTH: 0,
 	HEIGHT: 0,
+	colorFill: BLACK_COLOR_FILL,
+	colorStroke: BLACK_COLOR_STROKE,
 };
 
 try {
-	const WIDTH = UI.CANVAS.clientWidth;
-	const HEIGHT = UI.CANVAS.clientHeight;
+	resize();
 
-	const minSize = Math.min(WIDTH, HEIGHT);
-	state.KKK = minSize / 3;
+	// window.addEventListener('resize', resize);
 
-	state.WIDTH = WIDTH;
-	state.HEIGHT = HEIGHT;
+	requestAnimationFrame(resize);
 
 	create();
 	animate();
@@ -59,7 +67,7 @@ export function setRotate(int) {
 	// index.textContent = int.toFixed(2);
 
 	gsap.to(state, {
-		rotation: 4 * Math.PI * int,
+		rotation: 2 * Math.PI * int,
 		duration: 1,
 	});
 	// state.rotation = Math.PI * int;
@@ -69,8 +77,12 @@ export function setRotate(int) {
 export function setBackground(isWhite) {
 	if (isWhite) {
 		state.background = WHITE;
+		state.colorFill = WHITE_COLOR_FILL;
+		state.colorStroke = WHITE_COLOR_STROKE;
 	} else {
 		state.background = BLACK;
+		state.colorFill = BLACK_COLOR_FILL;
+		state.colorStroke = BLACK_COLOR_STROKE;
 	}
 }
 
@@ -131,8 +143,6 @@ function createDots() {
 }
 
 function createCanvas() {
-	UI.CANVAS.width = state.WIDTH;
-	UI.CANVAS.height = state.HEIGHT;
 	const ctx = UI.CANVAS.getContext('2d');
 	ctx.fillRect(0, 0, UI.CANVAS.width, UI.CANVAS.height);
 
@@ -141,10 +151,10 @@ function createCanvas() {
 
 function draw() {
 	state.ctx.fillStyle = state.background;
-	state.ctx.fillRect(0, 0, UI.CANVAS.width, UI.CANVAS.height);
+	state.ctx.fillRect(0, 0, state.WIDTH, state.HEIGHT);
 
-	state.ctx.fillStyle = '#A42E2C';
-	state.ctx.strokeStyle = '#670E0E';
+	state.ctx.fillStyle = state.colorFill; //'#A42E2C'
+	state.ctx.strokeStyle = state.colorStroke; //'#670E0E';
 
 	state.dots.forEach(drawLines);
 	state.dots.forEach(drawDot);
@@ -182,6 +192,8 @@ function drawLines(dot) {
 }
 
 function animate() {
+	resize();
+
 	state.time++;
 	recalculate();
 	draw();
@@ -254,4 +266,18 @@ function createDot(...args) {
 		db: MAX_STEP * Math.random() - MAX_STEP / 2,
 		links: [],
 	};
+}
+
+function resize() {
+	const WIDTH = UI.CANVAS.clientWidth;
+	const HEIGHT = UI.CANVAS.clientHeight;
+
+	const minSize = Math.min(WIDTH, HEIGHT);
+	state.KKK = minSize / 3;
+
+	state.WIDTH = WIDTH;
+	state.HEIGHT = HEIGHT;
+
+	UI.CANVAS.width = WIDTH;
+	UI.CANVAS.height = HEIGHT;
 }
