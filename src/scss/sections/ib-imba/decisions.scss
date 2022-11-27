@@ -1,0 +1,104 @@
+.decisions {
+
+  &__title {
+    span {
+      color: $red;
+    }
+  }
+
+  &__info {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    max-width: 809px;
+    &-lines {
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    @include media-mb {
+      row-gap: 20px;
+    }
+  }
+
+  &__card {
+    padding: 60px 40px;
+    background-color: $black-17;
+    .light-mode & {
+      background-color: $title-white;
+    }
+    @include media-mb {
+      padding: 20px;
+    }
+
+    &-info {
+      display: grid;
+      column-gap: 40px;
+      grid-template-columns: 80px 1fr 1fr;
+      align-items: center;
+      margin-bottom: 80px;
+      @include media-tb {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &-title {
+      @include media-tb {
+        margin-top: 40px;
+        margin-bottom: 24px;
+      }
+      @include media-mb {
+        margin-top: 32px;
+      }
+    }
+
+    &-btns {
+      display: flex;
+      margin-left: 120px;
+      column-gap: 64px;
+      @include media-tb {
+        margin-left: 0;
+      }
+      @include media-mb {
+        flex-direction: column;
+        row-gap: 32px;
+      }
+    }
+
+    &-btn {
+      padding: 0;
+      &_black {
+        color: $title-white;
+        &:hover {
+          color: $red;
+        }
+        .light-mode & {
+          color: $title-black;
+        }
+      }
+      &_black:hover {
+        color: $red;
+      }
+    }
+
+    &-img {
+      &_white {
+        display: none;
+        .light-mode & {
+          display: block;
+        }
+      }
+      &_black {
+        display:block;
+        .light-mode & {
+          display: none;
+        } 
+      }
+    }
+  }
+
+}
