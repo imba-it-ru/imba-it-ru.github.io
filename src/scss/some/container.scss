@@ -9,7 +9,8 @@
 		margin: 0 auto;
 	}
 	@include media-ts {
-		max-width: 640px;
+		// max-width: 640px;
+    max-width: 736px;
 	}
 	@include media-mb {
 		max-width: 480px;
