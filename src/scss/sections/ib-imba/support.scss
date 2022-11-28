@@ -1,0 +1,98 @@
+.support-security {
+  &__title {
+    margin-bottom: 100px;
+    @include media-ts {
+      margin-bottom: 64px;
+    }
+    @include media-mb {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 142px;
+    @include media-ts {
+      flex-direction: column;
+    }
+
+    &-img {
+      @include media-ts {
+        width: 184px;
+        margin-bottom: 64px;
+        display: none;
+      }
+    }
+
+    &-cards {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+      max-width: 715px;
+      @include media-tb {
+        row-gap: 32px;
+      }
+      @include media-mb {
+        row-gap: 24px;
+      }
+    }
+
+    &-line {
+      margin-top: 0;
+      margin-bottom: 40px;
+      @include media-tb {
+        margin-bottom: 32px;
+      }
+    }
+
+    &-cards {
+      margin-top: 40px;
+    }
+    &-text {
+      margin-bottom: 32px;
+      @include media-tb {
+        margin-bottom: 40px;
+      }
+    }
+
+    &-btn {      
+      padding: 24px 40px;
+      @include media-ms {
+        padding: 24px 28px;
+    }
+    &:hover {
+      padding: 22px 38px;
+      @include media-ms {
+        padding: 22px 26px;
+      }
+    }
+    }
+  }
+
+  &__card {
+    &-line {
+      width: 100%;
+      height: 1px;
+      background-color: $line-white;
+      margin-bottom: 32px;
+      .light-mode & {
+        background-color: $line-red;
+      }
+    }
+
+    &-text {
+      margin: 16px 0;
+      @include media-tb {
+        margin: 16px 0 32px 0;
+      }
+      @include media-mb {
+        margin: 16px 0 24px 0;
+      }
+    }
+
+    &-btn {
+      padding: 0;
+    }
+  }
+}
