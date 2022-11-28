@@ -1,6 +1,6 @@
 export function showSolution() {
 	const buttons = document.querySelectorAll('.our-solutions__card-btn');
-  const moreInfos = document.querySelectorAll('.our-solutions__card-more-info');
+  const moreInfos = document.querySelectorAll('.our-solutions__card-more-info_unvisible');
 
   for (let i = 0; i < buttons.length; i++) {
     const button = buttons[i];
@@ -11,13 +11,14 @@ export function showSolution() {
 }
 
 function showMoreInfo(button, moreInfo) {
-  moreInfo.style.display = 'none';
+  const style = getComputedStyle(moreInfo);
+  // moreInfo.style.display = 'none';
   button.addEventListener('click', () => {
-    if (moreInfo.style.display === 'none') {
-      moreInfo.style.display = 'block';
+    if (style.display === 'none') {
+      moreInfo.classList.remove('our-solutions__card-more-info_unvisible');
       button.textContent = 'Скрыть информацию';
     } else {
-      moreInfo.style.display = 'none';
+      moreInfo.classList.add('our-solutions__card-more-info_unvisible');
       button.textContent = 'Показать больше';
     }
   });

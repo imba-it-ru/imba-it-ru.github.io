@@ -68,7 +68,7 @@
       }
     }
     &-more-info {
-      display: none;
+      // display: none;
       .lead-text {
         color: $title-white;
         margin-bottom: 12px;
@@ -83,6 +83,9 @@
         display: flex;
         column-gap: 16px;
         margin-top: 4px;
+      }
+      &_unvisible {
+        display:none;
       }
     }
     &-more-marker {
