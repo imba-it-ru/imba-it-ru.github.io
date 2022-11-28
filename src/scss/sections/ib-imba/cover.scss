@@ -1,4 +1,5 @@
 .cover-security {
+  position: relative;
   @include media-ts {
     height: initial;
   }
@@ -56,6 +57,24 @@
       background-color: $red;
       width: 100%;
       height: 2px;
+    }
+  }
+  &__img {
+    position: absolute;
+    right: 76px;
+    top: 62px;
+    width: 848px;
+    @include media-tb {
+      top: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    @include media-mb {
+      width: 100%;
+    }
+    @include media-ms {
+      width: 269px;
+      right: 50px;
     }
   }
 }
