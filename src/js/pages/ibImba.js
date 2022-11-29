@@ -5,7 +5,7 @@ import { numberAnimated } from '../sections/ibImba/number.js';
 import { showSolution } from '../sections/ibImba/solution.js';
 import { showMoreSolutions } from '../sections/ibImba/solutions.js';
 import { makeClientsLogo } from '../sections/index/clientsLogo.js';
-import { makePartnersLogo } from '../sections/index/partnersLogo.js';
+import { makePartnersLogo } from '../sections/ibImba/ibPartners.js';
 import { UI_SELECTORS, UI_CLASSES } from '../sections/index/tabs.js';
 import { Tabs } from '../utils/tabs.js';
 

@@ -2,7 +2,7 @@
   &__container {
     padding: 100px 6px;
     @include media-tb {
-      padding: 100px 16px;
+      padding: 80px 16px;
       margin: 0 auto;
     }
     @include media-mb {
