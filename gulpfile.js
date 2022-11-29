@@ -39,7 +39,7 @@ function jsCreate() {
 	return src(JS_PATH + '*.js')
 		.pipe(
 			webpack({
-				mode: 'production',
+				mode: 'development',
 				devtool: false,
 				entry: entryJs,
 				output: {
