@@ -1,6 +1,9 @@
 .small-logo {
 	&__container {
 		padding: 0 6px 80px;
+    @include media-mb {
+      padding: 60px 12px;
+    }
 	}
 
 	&__line {
@@ -14,21 +17,21 @@
 		display: grid;
 		grid-template-columns: repeat(8, 1fr);
 		gap: 40px 32px;
-    @include media-pc {
-      grid-template-columns: repeat(6, 1fr);
-    }
-		@include media-tb {
+    // @include media-pc {
+    //   grid-template-columns: repeat(6, 1fr);
+    // }
+		// @include media-tb {
+		// 	grid-template-columns: repeat(6, 1fr);
+		// }
+		@include media-ts {
 			grid-template-columns: repeat(6, 1fr);
 		}
-		@include media-ts {
-			grid-template-columns: repeat(4, 1fr);
-		}
 		@include media-mb {
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(4, 1fr);
 			gap: 20px 16px;
 		}
 		@include media-ms {
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 	&__btn {
