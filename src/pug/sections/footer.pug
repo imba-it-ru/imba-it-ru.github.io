@@ -11,16 +11,20 @@ footer.section.footer
           p.lead-text.footer__title Оставите заявку на БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ
           button.button.button_style_red.footer__button.popup-form-open оставить заявку
         .footer-menu
-          p.text.footer-menu__title О&nbsp;компании
+          //- p.text.footer-menu__title О&nbsp;компании
           ul.footer-menu__list
-            li.footer-menu__item
-              a.text-s.footer-menu__link.link-hover(href="#") Миссия
-            li.footer-menu__item
-              a.text-s.footer-menu__link.link-hover(href="/#about") О&nbsp;компании
-            li.footer-menu__item
-              a.text-s.footer-menu__link.link-hover(href="#") Преимущества
-            li.footer-menu__item
-              a.text-s.footer-menu__link.link-hover(href="/partners.html") Партнеры
+            each value, index in {'О компании' : '#about', 'Партнеры' : 'partners.html', 'Реквизиты' : 'requisites.html', 'Контакты' : 'contacts.html'}
+              li.footer-menu__item
+                a.text-s.footer-menu__link.link-hover(href= "/" + value)= index
+          //-   li.footer-menu__item
+          //-     a.text-s.footer-menu__link.link-hover(href="#") Миссия
+          //-   li.footer-menu__item
+          //-     a.text-s.footer-menu__link.link-hover(href="/#about") О&nbsp;компании
+          //-   li.footer-menu__item
+          //-     a.text-s.footer-menu__link.link-hover(href="#") Преимущества
+          //-   li.footer-menu__item
+          //-     a.text-s.footer-menu__link.link-hover(href="/partners.html") Партнеры
+
       .footer__contacts
         a.h3.footer-menu__contact-link(href="tel:+74959693977") +7 (495) 969 39 77
         a.h3.footer-menu__contact-link(href="mailto:hello@imba-it.ru") hello@imba-it.ru

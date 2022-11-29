@@ -23,7 +23,6 @@ function open(obj) {
 
 function changeContent(obj) {
   
-  
   UI.name.textContent = obj.name;
   UI.subtitle.textContent = obj.subtitle;
   UI.text.textContent = obj.text;

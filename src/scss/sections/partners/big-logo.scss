@@ -3,6 +3,9 @@
 .big-logo {
 	&__container {
 		padding-bottom: 80px;
+    @include media-mb {
+      padding-bottom: 60px;
+    }
 	}
 	&__line {
 		width: 100%;
