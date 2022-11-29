@@ -51,7 +51,15 @@
     column-gap: 24px;
     @include media-ts {
       flex-direction: column;
-      row-gap: 8px;
+    }
+  }
+
+  &__img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-ts {
+      align-items: flex-start;
     }
   }
 
@@ -70,6 +78,7 @@
 
   &__name {
     color: $text-white;
+    margin-bottom: 32px;
   }
 
   &__text {
@@ -81,7 +90,11 @@
     display: flex;
     column-gap: 8px;
     align-items: center;
-    margin: 8px 0 32px;
+    margin: 0;
+    @include media-ts {
+      margin-bottom: 32px;
+    }
+
     &-marker {
       width: 4px;
       height: 4px;
