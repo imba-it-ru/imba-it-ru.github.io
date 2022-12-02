@@ -72,31 +72,31 @@ export function createMainAnimation() {
 	});
 }
 
-export function createTitleAnimation() {
-	const title = document.querySelector('.cover-main__title');
-	const bound = document.querySelector('.services');
+// export function createTitleAnimation() {
+// 	const title = document.querySelector('.cover-main__title');
+// 	const bound = document.querySelector('.services');
 
-	const distance =
-		getClientRectAttribute(bound, 'top') -
-		getClientRectAttribute(title, 'bottom');
+// 	const distance =
+// 		getClientRectAttribute(bound, 'top') -
+// 		getClientRectAttribute(title, 'bottom');
 
-	const mm = gsap.matchMedia();
+// 	const mm = gsap.matchMedia();
 
-	// add a media query. When it matches, the associated function will run
-	mm.add('(min-width: 1200px)', () => {
-		const tl = gsap.timeline({
-			scrollTrigger: {
-				trigger: title,
-				start: 'top 180px',
-				end: `+=${distance}`,
-				scrub: true,
-				pin: title,
-			},
-		});
+// 	// add a media query. When it matches, the associated function will run
+// 	mm.add('(min-width: 1200px)', () => {
+// 		const tl = gsap.timeline({
+// 			scrollTrigger: {
+// 				trigger: title,
+// 				start: 'top 180px',
+// 				end: `+=${distance}`,
+// 				scrub: true,
+// 				pin: title,
+// 			},
+// 		});
 
-		tl.fromTo(title, { y: 0 }, { y: 0, duration: 1, ease: 'linear' });
-	});
-}
+// 		tl.fromTo(title, { y: 0 }, { y: 0, duration: 1, ease: 'linear' });
+// 	});
+// }
 
 function getClientRectAttribute(elem, attribute) {
 	const rect = elem.getBoundingClientRect();
