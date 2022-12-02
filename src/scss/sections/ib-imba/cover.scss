@@ -76,5 +76,17 @@
       width: 269px;
       right: 50px;
     }
+    &_color {
+      display: block;
+      .light-mode & {
+        display: none;
+      }
+    }
+    &_black {
+      display: none;
+      .light-mode & {
+        display: block;
+      }
+    }
   }
 }

@@ -1,12 +1,11 @@
 .services {
 	position: relative;
 	z-index: 1;
-
-	&__container {
-    @include media-tb {
-      padding-top: 0;
-    }
-	}
+	// &__container {
+  //   @include media-tb {
+  //     padding-top: 0;
+  //   }
+	// }
 	&__cards {
 		display: grid;
 		gap: 48px 32px;
@@ -32,6 +31,9 @@
 		}
 		&__title {
 			color: $title-white;
+      .light-mode & {
+        color: $title-white;
+      }
 		}
 		&__list {
 			display: flex;
@@ -53,6 +55,11 @@
     &__btn {
       padding: 0;
       margin-top: 8px;
+    }
+    &__text {
+      .light-mode & {
+        color: $text-white;
+      }
     }
 	}
 }
