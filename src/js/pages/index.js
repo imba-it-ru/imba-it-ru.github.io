@@ -1,8 +1,8 @@
 import { headerInit } from '../sections/header.js';
-import {
-	createMainAnimation,
-	createTitleAnimation,
-} from '../sections/index/animation.js';
+// import {
+// 	createMainAnimation,
+// 	createTitleAnimation,
+// } from '../sections/index/animation.js';
 import { makeClientsLogo } from '../sections/index/clientsLogo.js';
 import { numberAnimated } from '../sections/index/number.js';
 import { makePartnersLogo } from '../sections/index/partnersLogo.js';
@@ -25,8 +25,8 @@ function indexPageInit() {
 	numberAnimated();
 	makeClientsLogo();
 	makePartnersLogo();
-	createMainAnimation();
-	createTitleAnimation();
+	// createMainAnimation();
+	// createTitleAnimation();
 }
 
 indexPageInit();

@@ -26,6 +26,18 @@
         margin-bottom: 64px;
         display: none;
       }
+      &_color {
+        display: block;
+        .light-mode & {
+          display: none;
+        }
+      }
+      &_black {
+        display: none;
+        .light-mode & {
+          display: block;
+        }
+      }
     }
 
     &-cards {
