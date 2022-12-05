@@ -349,6 +349,13 @@ img {
   }
 }
 
+.black-background {
+  background-color: #171717;
+}
+.light-mode .black-background {
+  background-color: #FBFBFB;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("/fonts/Montserrat-Light.woff2") format("woff2"), url("/fonts/Montserrat-Light.woff") format("woff");
@@ -398,7 +405,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
-.button, .number, .lead-title, .h3, .h2, .h1 {
+.button, .number, .lead-title, .h5, .h4, .h3, .h2, .h1 {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 500;
   color: #ECECEC;
@@ -461,6 +468,35 @@ img {
   }
 }
 .light-mode .h3 {
+  color: #242424;
+}
+
+.h4 {
+  font-size: 30;
+  line-height: 1.3;
+  font-weight: 400;
+}
+@media screen and (max-width: 640px) {
+  .h4 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+.light-mode .h4 {
+  color: #242424;
+}
+
+.h5 {
+  font-size: 24;
+  line-height: 1.3;
+  font-weight: 400;
+}
+@media screen and (max-width: 1200px) {
+  .h5 {
+    font-size: 20px;
+  }
+}
+.light-mode .h5 {
   color: #242424;
 }
 
@@ -590,6 +626,13 @@ img {
   }
 }
 
+.black-background {
+  background-color: #171717;
+}
+.light-mode .black-background {
+  background-color: #FBFBFB;
+}
+
 html {
   scrollbar-color: #ccc transparent;
   scrollbar-width: thin;
@@ -642,6 +685,7 @@ li {
 
 .wrapper {
   overflow-x: hidden;
+  background-color: #202020;
 }
 
 body {
@@ -946,25 +990,25 @@ span.error::before {
 }
 .container {
   margin: 0 auto;
-  padding: 130px 6px;
+  padding: 100px 6px;
   max-width: 1288px;
 }
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
-    padding: 100px 16px;
+    padding: 80px 16px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 960px) {
   .container {
-    max-width: 640px;
+    max-width: 736px;
   }
 }
 @media screen and (max-width: 640px) {
   .container {
     max-width: 480px;
-    padding: 70px 12px;
+    padding: 60px 12px;
   }
 }
 @media screen and (max-width: 480px) {

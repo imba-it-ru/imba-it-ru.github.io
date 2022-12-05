@@ -349,6 +349,13 @@ img {
   }
 }
 
+.black-background {
+  background-color: #171717;
+}
+.light-mode .black-background {
+  background-color: #FBFBFB;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("/fonts/Montserrat-Light.woff2") format("woff2"), url("/fonts/Montserrat-Light.woff") format("woff");
@@ -398,7 +405,7 @@ img {
   font-style: normal;
   font-display: swap;
 }
-.button, .number, .lead-title, .h3, .h2, .h1 {
+.button, .number, .lead-title, .h5, .h4, .h3, .h2, .h1 {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 500;
   color: #ECECEC;
@@ -461,6 +468,35 @@ img {
   }
 }
 .light-mode .h3 {
+  color: #242424;
+}
+
+.h4 {
+  font-size: 30;
+  line-height: 1.3;
+  font-weight: 400;
+}
+@media screen and (max-width: 640px) {
+  .h4 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+.light-mode .h4 {
+  color: #242424;
+}
+
+.h5 {
+  font-size: 24;
+  line-height: 1.3;
+  font-weight: 400;
+}
+@media screen and (max-width: 1200px) {
+  .h5 {
+    font-size: 20px;
+  }
+}
+.light-mode .h5 {
   color: #242424;
 }
 
@@ -590,6 +626,13 @@ img {
   }
 }
 
+.black-background {
+  background-color: #171717;
+}
+.light-mode .black-background {
+  background-color: #FBFBFB;
+}
+
 html {
   scrollbar-color: #ccc transparent;
   scrollbar-width: thin;
@@ -642,6 +685,7 @@ li {
 
 .wrapper {
   overflow-x: hidden;
+  background-color: #202020;
 }
 
 body {
@@ -946,25 +990,25 @@ span.error::before {
 }
 .container {
   margin: 0 auto;
-  padding: 130px 6px;
+  padding: 100px 6px;
   max-width: 1288px;
 }
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
-    padding: 100px 16px;
+    padding: 80px 16px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 960px) {
   .container {
-    max-width: 640px;
+    max-width: 736px;
   }
 }
 @media screen and (max-width: 640px) {
   .container {
     max-width: 480px;
-    padding: 70px 12px;
+    padding: 60px 12px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1456,26 +1500,16 @@ span.error::before {
 }
 
 .cover-main {
-  height: 100vh;
   position: relative;
-}
-@media screen and (max-width: 1200px) {
-  .cover-main {
-    height: 800px;
-  }
-}
-@media screen and (max-width: 640px) {
-  .cover-main {
-    height: 300px;
-  }
 }
 .cover-main__container {
   position: relative;
   z-index: 1;
+  padding-bottom: 0;
 }
 @media screen and (max-width: 1200px) {
   .cover-main__container {
-    padding-top: 280px;
+    padding-top: 140px;
   }
 }
 @media screen and (max-width: 640px) {
@@ -1483,37 +1517,82 @@ span.error::before {
     padding-top: 100px;
   }
 }
+.light-mode .cover-main__title {
+  color: #ECECEC;
+}
 .cover-main__title span {
   color: #F05555;
 }
+@media screen and (max-width: 1200px) {
+  .cover-main__title {
+    max-width: 500px;
+  }
+}
 
-.canvas {
+.video-box {
+  position: absolute;
+  top: 0;
+  left: 0;
   pointer-events: none;
   width: 100%;
   height: 100vh;
-  position: absolute;
-  z-index: 0;
+  background-color: #202020;
 }
 @media screen and (max-width: 1200px) {
-  .canvas {
-    opacity: 0.4;
-    height: 800px;
+  .video-box {
+    height: 600px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .video-box {
+    height: 480px;
   }
 }
 @media screen and (max-width: 640px) {
-  .canvas {
+  .video-box {
     height: 300px;
   }
+}
+.video-box__video {
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  min-width: 100%;
+  transform: translate(-30%, -60%);
+  mix-blend-mode: lighten;
+  position: absolute;
+  object-fit: cover;
+}
+@media screen and (max-width: 1200px) {
+  .video-box__video {
+    transform: translate(-30%, -60%);
+  }
+}
+@media screen and (max-width: 960px) {
+  .video-box__video {
+    transform: translate(-30%, -60%);
+  }
+}
+@media screen and (max-width: 640px) {
+  .video-box__video {
+    transform: translate(-30%, -50%);
+  }
+}
+@media screen and (max-width: 480px) {
+  .video-box__video {
+    transform: translate(-50%, -55%);
+  }
+}
+.video-box__gradient {
+  position: absolute;
+  height: 100%;
+  min-width: 100%;
+  background: linear-gradient(180deg, rgba(32, 32, 32, 0) 0%, rgba(32, 32, 32, 0.5018382353) 100%);
 }
 
 .services {
   position: relative;
   z-index: 1;
-}
-@media screen and (max-width: 1200px) {
-  .services__container {
-    padding-top: 0;
-  }
 }
 .services__cards {
   display: grid;
@@ -1548,6 +1627,9 @@ span.error::before {
 .services-card__title {
   color: #ECECEC;
 }
+.light-mode .services-card__title {
+  color: #ECECEC;
+}
 .services-card__list {
   display: flex;
   flex-direction: column;
@@ -1568,6 +1650,9 @@ span.error::before {
 .services-card__btn {
   padding: 0;
   margin-top: 8px;
+}
+.light-mode .services-card__text {
+  color: #ADADAD;
 }
 
 .about {
@@ -1870,7 +1955,7 @@ span.error::before {
 }
 @media screen and (max-width: 1200px) {
   .solutions__container {
-    padding: 100px 16px;
+    padding: 80px 16px;
     margin: 0 auto;
   }
 }
@@ -2005,10 +2090,10 @@ span.error::before {
 .form__fields label:last-of-type {
   margin-bottom: 0;
 }
-.form__fields input {
+.form__fields_input {
   display: block;
-  width: 100%;
   height: 48px;
+  width: 100%;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -2018,13 +2103,13 @@ span.error::before {
   border: 1px solid transparent;
   transition: border-color 0.3s, color 0.3s;
 }
-.form__fields input::placeholder {
+.form__fields_input::placeholder {
   color: #ADADAD;
 }
-.form__fields input:focus {
+.form__fields_input:focus {
   border-color: #484848;
 }
-.form__fields input.error {
+.form__fields_input.error {
   border-color: #F05555;
   color: #F05555;
 }
@@ -2215,9 +2300,14 @@ span.error::before {
 .footer-menu__contact-social {
   transition: opacity 0.3s;
   position: relative;
+  width: 40px;
+  height: 40px;
 }
 .footer-menu__contact-social:hover {
   opacity: 0.6;
+}
+.footer-menu__contact-address {
+  max-width: 300px;
 }
 .light-mode .footer-menu__contact-icon {
   display: none;
@@ -2230,17 +2320,18 @@ span.error::before {
 }
 .light-mode .footer-menu__contact-icon_black {
   display: block;
-  margin-bottom: 40px;
 }
 .footer__contacts {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
   padding-top: 74px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 1200px) {
   .footer__contacts {
     padding-top: 0;
+    margin-bottom: 0;
   }
 }
 .footer__copy-line {
@@ -2264,4 +2355,10 @@ span.error::before {
 }
 .footer__link {
   width: 298px;
+}
+.footer__link span {
+  border-bottom: 1px solid #ADADAD;
+}
+.light-mode .footer__link span {
+  border-bottom: 1px solid #242424;
 }
