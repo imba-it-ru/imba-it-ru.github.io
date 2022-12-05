@@ -97,13 +97,18 @@
     &__contact-social {
       transition: opacity .3s;
       position: relative;
+      width: 40px;
+      height: 40px;
       &:hover {
         opacity: 0.6;
       }
     }
 
+    &__contact-address {
+      max-width: 300px;
+    }
+
     &__contact-icon {
-      
       .light-mode & {
         display: none;
       }
@@ -114,7 +119,7 @@
         display: none;
         .light-mode & {
           display: block;
-          margin-bottom: 40px;
+          // margin-bottom: 40px;
         }
       }
     }
@@ -125,8 +130,10 @@
     flex-direction: column;
     row-gap: 16px;
     padding-top: 74px;
+    margin-bottom: 40px;
     @include media-tb {
       padding-top: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -151,6 +158,12 @@
   }
 &__link {
   width: 298px;
+  span {
+    border-bottom: 1px solid $text-white;
+    .light-mode & {
+      border-bottom: 1px solid $text-black;
+    }
+  }
 }
 
 }

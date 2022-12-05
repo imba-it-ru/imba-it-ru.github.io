@@ -49,8 +49,8 @@ function createBox(obj) {
 	button.append(imgBox);
 
 	if (obj.subtitle != '') {
-		textBox.append(marker);
-		textBox.append(subtitle);
+		// textBox.append(marker);
+		// textBox.append(subtitle);
 		button.append(textBox);
 	}
 

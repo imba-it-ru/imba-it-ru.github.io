@@ -1,30 +1,21 @@
 .maps-tabs__map {
-  filter: grayscale(1) brightness(1) invert(1);
-  .light-mode & {
-    filter: grayscale(1);
-  }
-//   position: relative;
-//   iframe {
-//      filter: invert(100%);
-//   }
+
+}
+[class*="ymaps-2"][class*="-ground-pane"] {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(100%);
 }
 
+.balloon-content {
+	padding: rem-calc(10) rem-calc(10);
 
-// .map-circle-placemark._comma._size_medium._outline {
-  
-//     // color: #0faaaa!important;
-//     // mix-blend-mode: difference;
+  .balloon-title {
+    color:$text-black;
+    margin-bottom: 12px;
+  }
 
-// }
-
-// .maps-tabs__frame-box {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   background-color: white;
-//   mix-blend-mode: difference;
-//   width: 100%;
-//   height: 100%;
-//   pointer-events: none;
-//   cursor: pointer;
-// }
+	.balloon-text {
+		position: relative;
+    color:$text-black;
+	}
+}
